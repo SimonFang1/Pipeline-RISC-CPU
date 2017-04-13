@@ -12,8 +12,6 @@ quietly WaveActivateNextPane {} 0
       add wave -noupdate /i_mem_tb/status
       add wave -noupdate /i_mem_tb/i_mem_synth_inst/bmg_port/CLKA
       add wave -noupdate /i_mem_tb/i_mem_synth_inst/bmg_port/ADDRA
-      add wave -noupdate /i_mem_tb/i_mem_synth_inst/bmg_port/DINA
-      add wave -noupdate /i_mem_tb/i_mem_synth_inst/bmg_port/WEA
       add wave -noupdate /i_mem_tb/i_mem_synth_inst/bmg_port/DOUTA
 
 TreeUpdate [SetDefaultTree]

@@ -124,7 +124,7 @@ int main() {
 		cout << machineCode << endl;
 		line++;
 		ss.clear();
-        ss.str("");
+		ss.str("");
 	}
 	return 0;
 }

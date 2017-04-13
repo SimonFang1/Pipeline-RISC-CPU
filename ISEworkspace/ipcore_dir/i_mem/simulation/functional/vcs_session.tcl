@@ -75,8 +75,6 @@ gui_list_add_group -id Wave.1 {i_mem_Group}
       gui_sg_addsignal -group i_mem_Group  /i_mem_tb/status
       gui_sg_addsignal -group i_mem_Group  /i_mem_tb/i_mem_synth_inst/bmg_port/CLKA
       gui_sg_addsignal -group i_mem_Group  /i_mem_tb/i_mem_synth_inst/bmg_port/ADDRA
-      gui_sg_addsignal -group i_mem_Group  /i_mem_tb/i_mem_synth_inst/bmg_port/DINA
-      gui_sg_addsignal -group i_mem_Group  /i_mem_tb/i_mem_synth_inst/bmg_port/WEA
       gui_sg_addsignal -group i_mem_Group  /i_mem_tb/i_mem_synth_inst/bmg_port/DOUTA
 
 gui_zoom -window Wave.1 -full

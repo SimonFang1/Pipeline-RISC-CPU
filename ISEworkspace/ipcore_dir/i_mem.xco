@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Tue Apr 11 11:11:15 2017
+# Date: Wed Apr 12 11:03:18 2017
 #
 ##############################################################
 #
@@ -61,18 +61,18 @@ CSET fill_remaining_memory_locations=false
 CSET interface_type=Native
 CSET load_init_file=true
 CSET mem_file=no_Mem_file_loaded
-CSET memory_type=Single_Port_RAM
-CSET operating_mode_a=READ_FIRST
+CSET memory_type=Single_Port_ROM
+CSET operating_mode_a=WRITE_FIRST
 CSET operating_mode_b=WRITE_FIRST
 CSET output_reset_value_a=0
 CSET output_reset_value_b=0
 CSET pipeline_stages=0
 CSET port_a_clock=100
 CSET port_a_enable_rate=100
-CSET port_a_write_rate=50
-CSET port_b_clock=100
-CSET port_b_enable_rate=100
-CSET port_b_write_rate=50
+CSET port_a_write_rate=0
+CSET port_b_clock=0
+CSET port_b_enable_rate=0
+CSET port_b_write_rate=0
 CSET primitive=8kx2
 CSET read_width_a=16
 CSET read_width_b=16
@@ -97,7 +97,7 @@ CSET use_regcea_pin=false
 CSET use_regceb_pin=false
 CSET use_rsta_pin=false
 CSET use_rstb_pin=false
-CSET write_depth_a=256
+CSET write_depth_a=255
 CSET write_width_a=16
 CSET write_width_b=16
 # END Parameters
@@ -105,4 +105,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: b654e200
+# CRC: e8ed7ed2

@@ -8,42 +8,34 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/ALU.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/ALU.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/ALU.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/header.v&apos; in file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/ALU.v&quot; line 21
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/ALU.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/header.v&apos; in file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/ALU.v&quot; line 21
 </arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/PCPU.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/PCPU.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/PCPU.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/header.v&apos; in file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/PCPU.v&quot; line 21
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/PCPU.v</arg>&quot; Line <arg fmt="%d" index="2">21</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/header.v&apos; in file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/PCPU.v&quot; line 21
 </arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/carry_test.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/clock_div.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/clock_div.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/manual_clock.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/dmem.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/pcpu_tb.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/imem.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/pcpu_tb.v</arg>&quot; Line <arg fmt="%d" index="2">24</arg>. <arg fmt="%s" index="3">Include file found: &apos;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/header.v&apos; in file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/pcpu_tb.v&quot; line 24
+</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/manual_clock.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/seven_seg.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/shift_test.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/top.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/top.v&quot; into library work</arg>
 </msg>
 
 </messages>

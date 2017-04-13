@@ -41,11 +41,11 @@ module manual_clock(
 	 always @(*) begin
         case(state)
             RESET:
-                if (button) nextstate <= SET;
+                if (button == 1'b1) nextstate <= SET;
                 else  nextstate <= RESET;
             SET: nextstate <= LOCK;
             LOCK:
-                if (button) nextstate <= LOCK;
+                if (button == 1'b1) nextstate <= LOCK;
                 else nextstate <= RESET;
             default: nextstate <= RESET;
         endcase

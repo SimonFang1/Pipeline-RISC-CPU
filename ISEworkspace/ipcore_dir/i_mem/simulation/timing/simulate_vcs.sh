@@ -54,10 +54,7 @@ vlogan +v2k  ../../implement/results/routed.v
 
 echo "Compiling Test Bench Files"
 vhdlan    ../bmg_tb_pkg.vhd
-vhdlan    ../random.vhd
-vhdlan    ../data_gen.vhd
 vhdlan    ../addr_gen.vhd
-vhdlan    ../checker.vhd
 vhdlan    ../bmg_stim_gen.vhd
 vhdlan    ../i_mem_synth.vhd 
 vhdlan    ../i_mem_tb.vhd

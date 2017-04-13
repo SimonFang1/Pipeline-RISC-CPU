@@ -25,14 +25,15 @@ module PCPU(
 	 input enable,
 	 input [15:0] i_datain,
 	 input reset,
-	 input [4:0] select_y,
+	 input [3:0] select_y,
 	 input start,
 //	 input [2:0] innerReg,
 	 output [7:0] d_addr,
 	 output [15:0] d_dataout,
 	 output d_we,
 	 output [7:0] i_addr,
-	 output reg [15:0] y
+	 output reg [15:0] y,
+	 input show_gr
     );
     
 	 reg [7:0] pc;
@@ -98,7 +99,7 @@ module PCPU(
 				if (pc_jump == 1'b1)
 				    pc <= reg_C[7:0];
 				else
-				    pc <= pc + 1;
+				    pc <= pc + 1'b1;
         end
     end
 	 always @(*) begin
@@ -190,21 +191,6 @@ module PCPU(
         end
     end
 
-	 //*********** Modules ***********//
-//	 // GerneralRegister
-//	 GeneralRegister gr(
-//        .clock(clock),
-//	     .reset(reset),
-//	     .readReg1(id_ir[`I_R1]),
-//	     .readReg2(id_ir[`I_R2]),
-//	     .readReg(innerReg),
-//	     .we(w_wb_enable),
-//	     .writeReg(wb_ir[`I_R1]),
-//	     .writeData(reg_C1),
-//	     .readData1(w_readDataA),
-//	     .readData2(w_readDataB),
-//	     .readData(w_readInnerReg)
-//    );
 	 //ALU 
 	 reg [3:0] ALUop;
 	 always @(ex_ir or flags) begin
@@ -248,29 +234,34 @@ module PCPU(
 	 
 	 //*********** Output ***********//
 	 always @(*) begin
-	     case (select_y)
-		      5'd0: y = pc;    //{8'b0000_0000, pc};
-				5'd1: y = id_ir;
-				5'd2: y = ex_ir;
-				5'd3: y = mem_ir;
-				5'd4: y = wb_ir;
-				5'd5: y = reg_A;
-				5'd6: y = reg_B;
-				5'd7: y = reg_C;
-				5'd8: y = flags;
-				5'd9: y = dw;
-				5'd10: y = smdr;
-				5'd11: y = smdr1;
-				5'd12: y = reg_C1;
-				5'b10000: y = gr[0];
-				5'b10001: y = gr[1];
-				5'b10010: y = gr[2];
-				5'b10011: y = gr[3];
-				5'b10100: y = gr[4];
-				5'b10101: y = gr[5];
-				5'b10110: y = gr[6];
-				5'b10111: y = gr[7];
-				default: y = pc;
-		  endcase
+	     if (show_gr == 1'b1) begin
+		      case (select_y[2:0])
+					3'b000: y = gr[0];
+					3'b001: y = gr[1];
+					3'b010: y = gr[2];
+					3'b011: y = gr[3];
+					3'b100: y = gr[4];
+					3'b101: y = gr[5];
+					3'b110: y = gr[6];
+					3'b111: y = gr[7];
+			  endcase
+		  end else begin
+		      case (select_y)
+					4'd0: y = pc;    //{8'b0000_0000, pc};
+					4'd1: y = id_ir;
+					4'd2: y = ex_ir;
+					4'd3: y = mem_ir;
+					4'd4: y = wb_ir;
+					4'd5: y = reg_A;
+					4'd6: y = reg_B;
+					4'd7: y = reg_C;
+					4'd8: y = flags;
+					4'd9: y = dw;
+					4'd10: y = smdr;
+					4'd11: y = smdr1;
+					4'd12: y = reg_C1;
+					default: y = pc;
+			  endcase
+		  end
 	 end
 endmodule

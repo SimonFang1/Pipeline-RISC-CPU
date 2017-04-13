@@ -24,6 +24,7 @@ module top(
 	 input reset,
 	 input n_start,
 	 input debug,
+	 input show_gr,
 	 input m_clk_btn,
 	 input [3:0] select_y,
 	 output reg [6:0] display_atog,
@@ -60,7 +61,7 @@ module top(
 	 clock_div clk_div_display(
         .clock(clock),
 	     .reset(reset),
-	     .div_ratio(32'd500_000), // 10ms
+	     .div_ratio(32'd50_000), // 1ms
 	     .clk_div(display_clk)
     );
 	 
@@ -72,7 +73,7 @@ module top(
 	     if (reset)
 		      svn_seg_counter <= 0;
 	     else
-		      svn_seg_counter <= svn_seg_counter + 1;
+		      svn_seg_counter <= svn_seg_counter + 1'b1;
 	 end
 	 always @(*) begin
 	     case(svn_seg_counter)
@@ -108,7 +109,8 @@ module top(
 	     .d_datain(d_datain),
 	     .enable(enable),
 	     .i_datain(i_datain),
-	     .select_y({debug, select_y}),
+		  .show_gr(show_gr),
+	     .select_y(select_y),
 	     .start(start),
 	     .d_addr(d_addr),
 	     .d_dataout(d_dataout),
@@ -116,15 +118,12 @@ module top(
 		  .i_addr(i_addr),
 		  .y(pcpu_y)
     );
-	 
-	 
-	 i_mem i_mem0 (
-		.clka(clock), 
-		.wea(1'b0), 
-		.addra(i_addr), 
-		.dina(16'd0), 
-		.douta(i_datain)
-	);
+	
+	i_mem i_mem0(
+      .clka(clock),
+      .addra(i_addr),
+      .douta(i_datain)
+   );
 	 
 //	 imem imem0(
 //        .address(i_addr),

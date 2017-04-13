@@ -32,7 +32,7 @@ initial begin
     count = 0;
 end
  
-always @ (posedge(clock), posedge(reset))
+always @ (posedge clock or posedge reset)
 begin
     if (reset == 1'b1)
         count <= 32'b0;
@@ -42,7 +42,7 @@ begin
         count <= count + 1;
 end
 
-always @ (posedge(clock), posedge(reset))
+always @ (posedge clock or posedge reset)
 begin
     if (reset == 1'b1)
         clk_div <= 1'b0;

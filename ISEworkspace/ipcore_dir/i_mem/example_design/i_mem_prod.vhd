@@ -81,7 +81,7 @@
 --    C_AXI_TYPE                  :  1 
 --    C_AXI_SLAVE_TYPE            :  0 
 --    C_AXI_ID_WIDTH              :  4 
---    C_MEM_TYPE                  :  0 
+--    C_MEM_TYPE                  :  3 
 --    C_BYTE_SIZE                 :  9 
 --    C_ALGORITHM                 :  1 
 --    C_PRIM_TYPE                 :  1 
@@ -98,11 +98,11 @@
 --    C_HAS_REGCEA                :  0 
 --    C_USE_BYTE_WEA              :  0 
 --    C_WEA_WIDTH                 :  1 
---    C_WRITE_MODE_A              :  READ_FIRST 
+--    C_WRITE_MODE_A              :  WRITE_FIRST 
 --    C_WRITE_WIDTH_A             :  16 
 --    C_READ_WIDTH_A              :  16 
---    C_WRITE_DEPTH_A             :  256 
---    C_READ_DEPTH_A              :  256 
+--    C_WRITE_DEPTH_A             :  255 
+--    C_READ_DEPTH_A              :  255 
 --    C_ADDRA_WIDTH               :  8 
 --    C_HAS_RSTB                  :  0 
 --    C_RST_PRIORITY_B            :  CE 
@@ -115,8 +115,8 @@
 --    C_WRITE_MODE_B              :  WRITE_FIRST 
 --    C_WRITE_WIDTH_B             :  16 
 --    C_READ_WIDTH_B              :  16 
---    C_WRITE_DEPTH_B             :  256 
---    C_READ_DEPTH_B              :  256 
+--    C_WRITE_DEPTH_B             :  255 
+--    C_READ_DEPTH_B              :  255 
 --    C_ADDRB_WIDTH               :  8 
 --    C_HAS_MEM_OUTPUT_REGS_A     :  0 
 --    C_HAS_MEM_OUTPUT_REGS_B     :  0 
@@ -231,11 +231,7 @@ ARCHITECTURE xilinx OF i_mem_prod IS
   COMPONENT i_mem_exdes IS
   PORT (
       --Port A
-  
-    WEA            : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     ADDRA          : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-  
-    DINA           : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
   
     DOUTA          : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 
@@ -252,11 +248,7 @@ BEGIN
   bmg0 : i_mem_exdes
     PORT MAP (
       --Port A
-  
-      WEA        => WEA,
       ADDRA      => ADDRA,
-  
-      DINA       => DINA,
   
       DOUTA      => DOUTA,
 

@@ -29,7 +29,7 @@ SET_PARAMETER AXI_Type AXI4_Full
 SET_PARAMETER AXI_Slave_Type Memory_Slave
 SET_PARAMETER Use_AXI_ID false
 SET_PARAMETER AXI_ID_Width 4
-SET_PARAMETER Memory_Type Single_Port_RAM
+SET_PARAMETER Memory_Type Single_Port_ROM
 SET_PARAMETER Enable_32bit_Address false
 SET_PARAMETER ecctype No_ECC
 SET_PARAMETER ECC false
@@ -42,9 +42,9 @@ SET_PARAMETER Algorithm Minimum_Area
 SET_PARAMETER Primitive 8kx2
 SET_PARAMETER Assume_Synchronous_Clk false
 SET_PARAMETER Write_Width_A 16
-SET_PARAMETER Write_Depth_A 256
+SET_PARAMETER Write_Depth_A 255
 SET_PARAMETER Read_Width_A 16
-SET_PARAMETER Operating_Mode_A READ_FIRST
+SET_PARAMETER Operating_Mode_A WRITE_FIRST
 SET_PARAMETER Enable_A Always_Enabled
 SET_PARAMETER Write_Width_B 16
 SET_PARAMETER Read_Width_B 16
@@ -74,11 +74,11 @@ SET_PARAMETER Output_Reset_Value_B 0
 SET_PARAMETER Reset_Type SYNC
 SET_PARAMETER Additional_Inputs_for_Power_Estimation false
 SET_PARAMETER Port_A_Clock 100
-SET_PARAMETER Port_A_Write_Rate 50
-SET_PARAMETER Port_B_Clock 100
-SET_PARAMETER Port_B_Write_Rate 50
+SET_PARAMETER Port_A_Write_Rate 0
+SET_PARAMETER Port_B_Clock 0
+SET_PARAMETER Port_B_Write_Rate 0
 SET_PARAMETER Port_A_Enable_Rate 100
-SET_PARAMETER Port_B_Enable_Rate 100
+SET_PARAMETER Port_B_Enable_Rate 0
 SET_PARAMETER Collision_Warnings ALL
 SET_PARAMETER Disable_Collision_Warnings false
 SET_PARAMETER Disable_Out_of_Range_Warnings false

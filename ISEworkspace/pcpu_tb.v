@@ -30,8 +30,9 @@ module pcpu_tb;
 	reg enable;
 	reg [15:0] i_datain;
 	reg reset;
-	reg [4:0] select_y;
+	reg [3:0] select_y;
 	reg start;
+	reg show_gr;
 
 	// Outputs
 	wire [7:0] d_addr;
@@ -53,7 +54,8 @@ module pcpu_tb;
 		.d_dataout(d_dataout), 
 		.d_we(d_we), 
 		.i_addr(i_addr), 
-		.y(y)
+		.y(y),
+		.show_gr(show_gr)
 	);
 
 	initial begin
@@ -65,6 +67,7 @@ module pcpu_tb;
 		reset = 0;
 		select_y = 0;
 		start = 0;
+		show_gr = 0;
 		#10 reset = 1;
 		#10 reset = 0;
 

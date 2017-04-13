@@ -1,4 +1,5 @@
 # Output products list for <i_mem>
+_xmsgs\pn_parser.xmsgs
 i_mem.asy
 i_mem.gise
 i_mem.mif
@@ -25,8 +26,6 @@ i_mem\implement\xst.scr
 i_mem\simulation\addr_gen.vhd
 i_mem\simulation\bmg_stim_gen.vhd
 i_mem\simulation\bmg_tb_pkg.vhd
-i_mem\simulation\checker.vhd
-i_mem\simulation\data_gen.vhd
 i_mem\simulation\functional\simcmds.tcl
 i_mem\simulation\functional\simulate_isim.bat
 i_mem\simulation\functional\simulate_mti.bat
