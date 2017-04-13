@@ -27,7 +27,6 @@ module PCPU(
 	 input reset,
 	 input [3:0] select_y,
 	 input start,
-//	 input [2:0] innerReg,
 	 output [7:0] d_addr,
 	 output [15:0] d_dataout,
 	 output d_we,
@@ -46,8 +45,6 @@ module PCPU(
 	 `define NF		flags[2]
 	 reg dw;
 	 
-//	 wire [15:0] w_readInnerReg, w_readDataA, w_readDataB;
-//	 wire w_wb_enable;
 	 wire [15:0] w_ALUo;
 	 wire [2:0] w_flags;
 	 
@@ -187,7 +184,7 @@ module PCPU(
 					 `NOT, `AND, `OR, `XOR,
 					 `SL, `SRL, `SRA,
 					 `LDIH: gr[wb_ir[`I_R1]] <= reg_C1;
-				endcase // no default will cause latch
+				endcase
         end
     end
 

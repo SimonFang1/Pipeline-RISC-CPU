@@ -20,9 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 module top(
     input clock,
-	 input n_enable,
+	 input en,
 	 input reset,
-	 input n_start,
+	 input start,
 	 input debug,
 	 input show_gr,
 	 input m_clk_btn,
@@ -31,9 +31,6 @@ module top(
 	 output display_dp,
 	 output [3:0] display_an
     );
-	 
-	 wire enable = ~n_enable;
-	 wire start = ~n_start;
 	 
 	 wire cpu_clk_auto, cpu_clk_manual, cpu_clk;
 	 wire display_clk;
@@ -107,7 +104,7 @@ module top(
         .clock(cpu_clk),
 		  .reset(reset),
 	     .d_datain(d_datain),
-	     .enable(enable),
+	     .enable(en),
 	     .i_datain(i_datain),
 		  .show_gr(show_gr),
 	     .select_y(select_y),

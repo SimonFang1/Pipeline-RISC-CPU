@@ -1,8 +1,9 @@
 NET clock				LOC = V10;
-NET n_enable			LOC = C4;
+NET en					LOC = V8;
+NET start				LOC = U8;
+NET show_gr				LOC = N8;
+NET debug				LOC = T5;
 NET reset				LOC = A8;
-NET n_start				LOC = D9;
-NET debug				LOC = N8;
 NET m_clk_btn			LOC = B8;
 NET select_y<0>		LOC = T10;
 NET select_y<1>		LOC = T9;
