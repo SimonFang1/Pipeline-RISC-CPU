@@ -184,7 +184,7 @@ BEGIN
 
 SYNTH_COE:  IF(C_ROM_SYNTH =0 ) GENERATE
 
-type mem_type is array (254 downto 0) of std_logic_vector(15 downto 0);
+type mem_type is array (255 downto 0) of std_logic_vector(15 downto 0);
 
   FUNCTION bit_to_sl(input: BIT) RETURN STD_LOGIC IS
     VARIABLE temp_return : STD_LOGIC;
@@ -290,7 +290,7 @@ constant c_init : mem_type := init_memory(0,
 										  "i_mem.mif",
                                            DEFAULT_DATA,
                                           16,
-                                          255);
+                                          256);
 
 
 constant rom : mem_type := c_init;
@@ -299,7 +299,7 @@ BEGIN
  EXPECTED_DATA <= rom(conv_integer(unsigned(check_read_addr)));
 
   CHECKER_RD_ADDR_GEN_INST:ENTITY work.ADDR_GEN
-    GENERIC MAP( C_MAX_DEPTH =>255 )
+    GENERIC MAP( C_MAX_DEPTH =>256 )
 
      PORT MAP(
         CLK => CLK,
@@ -353,7 +353,7 @@ END GENERATE;
 
 
   RD_ADDR_GEN_INST:ENTITY work.ADDR_GEN
-    GENERIC MAP( C_MAX_DEPTH => 255 )
+    GENERIC MAP( C_MAX_DEPTH => 256 )
 
      PORT MAP(
         CLK => CLK,

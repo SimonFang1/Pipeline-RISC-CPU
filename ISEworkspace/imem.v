@@ -22,6 +22,9 @@ module imem(
     input [7:0] address,
 	 output [15:0] q
     );
-	 reg [15:0]ram[255:0];
+	 reg [15:0] ram[0:255];
 	 assign q = ram[address];
+	 initial begin
+	     $readmemb("ipcore_dir/i_mem.mif", ram);
+	 end
 endmodule

@@ -36,7 +36,7 @@
 
 `timescale 1ns/1ps
 
-//synthesis attribute box_type <i_mem> "black_box"
+//synthesis attribute box_type <i_mem> "black_box" 
 module i_mem(
   clka,
   addra,
@@ -86,8 +86,8 @@ output [15 : 0] douta;
     .C_MEM_TYPE(3),
     .C_MUX_PIPELINE_STAGES(0),
     .C_PRIM_TYPE(1),
-    .C_READ_DEPTH_A(255),
-    .C_READ_DEPTH_B(255),
+    .C_READ_DEPTH_A(256),
+    .C_READ_DEPTH_B(256),
     .C_READ_WIDTH_A(16),
     .C_READ_WIDTH_B(16),
     .C_RST_PRIORITY_A("CE"),
@@ -104,8 +104,8 @@ output [15 : 0] douta;
     .C_USE_SOFTECC(0),
     .C_WEA_WIDTH(1),
     .C_WEB_WIDTH(1),
-    .C_WRITE_DEPTH_A(255),
-    .C_WRITE_DEPTH_B(255),
+    .C_WRITE_DEPTH_A(256),
+    .C_WRITE_DEPTH_B(256),
     .C_WRITE_MODE_A("WRITE_FIRST"),
     .C_WRITE_MODE_B("WRITE_FIRST"),
     .C_WRITE_WIDTH_A(16),

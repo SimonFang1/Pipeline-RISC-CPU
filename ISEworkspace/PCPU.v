@@ -58,6 +58,22 @@ module PCPU(
 	 initial begin
 	     gr[0] = 0;
 	 end
+	 //************* WB *************//
+    always @(posedge clock or posedge reset) begin
+        if (reset) begin
+		      gr[0] <= 0; gr[1] <= 0; gr[2] <= 0; gr[3] <= 0;
+				gr[4] <= 0; gr[5] <= 0; gr[6] <= 0; gr[7] <= 0;
+		  end else if (state ==`exec) begin
+		      case(wb_ir[`I_OP])
+				    `LOAD, `MOV,
+					 `ADD, `ADDI, `ADDC,
+					 `SUB, `SUBI, `SUBC, 
+					 `NOT, `AND, `OR, `XOR,
+					 `SL, `SRL, `SRA,
+					 `LDIH: gr[wb_ir[`I_R1]] <= reg_C1;
+				endcase
+        end
+    end
 	 
 	 //************* CPU control *************//
 	 reg state, next_state;
@@ -73,15 +89,15 @@ module PCPU(
             `idle : 
                 if ((enable == 1'b1) 
                 && (start == 1'b1))
-                    next_state <= `exec;
+                    next_state = `exec;
                 else    
-                    next_state <= `idle;
+                    next_state = `idle;
             `exec :
-                if ((enable == 1'b0) 
-                || (wb_ir[15:11] == `HALT))
-                    next_state <= `idle;
+                if ((enable == 1'b0)
+					 || wb_ir[`I_OP] == `HALT)
+                    next_state = `idle;
                 else
-                    next_state <= `exec;
+                    next_state = `exec;
         endcase
     end
 	 
@@ -93,9 +109,11 @@ module PCPU(
             pc <= 8'b0000_0000;
         end else if (state ==`exec) begin
             id_ir <= i_datain;
-				if (pc_jump == 1'b1)
+				if (wb_ir[`I_OP] == `HALT)
+				    pc <= pc;
+				else if (pc_jump == 1'b1)
 				    pc <= reg_C[7:0];
-				else
+			   else
 				    pc <= pc + 1'b1;
         end
     end
@@ -114,8 +132,10 @@ module PCPU(
 	 end
 	 
 	 //************* ID *************//
-     always @(posedge clock) begin
-        if (state ==`exec) begin
+     always @(posedge clock or posedge reset) begin
+	     if (reset) begin
+		      ex_ir <= 16'd0;
+		  end else if (state ==`exec) begin
             ex_ir <= id_ir;
 				smdr <= gr[id_ir[`I_R1]];
 				case(id_ir[`I_OP])
@@ -124,7 +144,10 @@ module PCPU(
 					      reg_A <= 16'd0;
 							reg_B <= id_ir[`I_IMDT];
 					 end
-					 `LDIH,
+					 `LDIH: begin
+					     reg_A <= gr[id_ir[`I_R1]];
+						  reg_B <= {id_ir[`I_IMDT], 8'd0};
+					 end
 					 `ADDI,
 				    `JMPR,
 				    `BZ,
@@ -140,7 +163,10 @@ module PCPU(
 					 `STORE,
 					 `SL,
 					 `SRL,
-					 `SRA: reg_B <= id_ir[`I_VAL3];
+					 `SRA: begin
+					     reg_A <= gr[id_ir[`I_R2]];
+					     reg_B <= id_ir[`I_VAL3];
+					 end
 				    default: begin
 					     reg_A <= gr[id_ir[`I_R2]];
 						  reg_B <= gr[id_ir[`I_R3]];
@@ -150,13 +176,18 @@ module PCPU(
     end
 	 
 	  //************* EX *************//  
-     always @(posedge clock) begin
-        if (state ==`exec) begin 
+     always @(posedge clock or posedge reset) begin
+        if (reset) begin
+		      mem_ir <= 16'd0;
+		  end else if (state ==`exec) begin
             mem_ir <= ex_ir;
             reg_C <= w_ALUo;
-            flags <= w_flags;
+				if (!(ex_ir[`I_OP] == `BN || ex_ir[`I_OP] == `BNN ||
+				      ex_ir[`I_OP] == `BZ || ex_ir[`I_OP] == `BNZ ||
+						ex_ir[`I_OP] == `BC || ex_ir[`I_OP] == `BNC))
+                flags <= w_flags;
 				smdr1 <= smdr;
-            if (ex_ir[15:11] == `STORE)
+            if (ex_ir[`I_OP] == `STORE)
                 dw <= 1'b1;
             else
                 dw <= 1'b0;
@@ -164,27 +195,16 @@ module PCPU(
     end
 	 
 	 //************* MEM *************//
-    always @(posedge clock) begin
-        if (state ==`exec) begin
-            wb_ir <= mem_ir;
-            if (mem_ir[15:11] == `LOAD)
+    always @(posedge clock or posedge reset) begin
+        if (reset) begin
+		      wb_ir <= 16'd0;
+		  end else if (state ==`exec) begin
+		      if (wb_ir[`I_OP] != `HALT)
+                wb_ir <= mem_ir;
+            if (mem_ir[`I_OP] == `LOAD)
                 reg_C1 <= d_datain;
             else
                 reg_C1 <= reg_C;
-        end
-    end
-	 
-	 //************* WB *************//
-    always @(posedge clock) begin
-        if (state ==`exec) begin
-		      case(wb_ir[`I_OP])
-				    `LOAD,
-					 `ADD, `ADDI, `ADDC,
-					 `SUB, `SUBI, `SUBC, 
-					 `NOT, `AND, `OR, `XOR,
-					 `SL, `SRL, `SRA,
-					 `LDIH: gr[wb_ir[`I_R1]] <= reg_C1;
-				endcase
         end
     end
 

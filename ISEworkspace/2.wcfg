@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/ISEDesign/ESAD/week6/PCPU/pcpu_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="pcpu_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/pcpu_tb/d_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">d_addr[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/d_dataout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_dataout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">d_dataout[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/d_we" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d_we</obj_property>
+      <obj_property name="ObjectShortName">d_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/i_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_addr[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/d_datain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d_datain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">d_datain[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/i_datain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_datain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_datain[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/id_ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_ir[15:0]</obj_property>
+      <obj_property name="ObjectShortName">id_ir[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/ex_ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ex_ir[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_ir[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/mem_ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_ir[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_ir[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/wb_ir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_ir[15:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_ir[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/reg_A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_A[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_A[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/reg_B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_B[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_B[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/reg_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_C[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_C[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/reg_C1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_C1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_C1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/select_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">select_y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">select_y[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">y[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/show_gr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">show_gr</obj_property>
+      <obj_property name="ObjectShortName">show_gr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/gr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gr[0:7,15:0]</obj_property>
+      <obj_property name="ObjectShortName">gr[0:7,15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/pcpu_tb/pcpu/gr[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,15:0]</obj_property>
+         <obj_property name="ObjectShortName">gr[0,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/pcpu/gr[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,15:0]</obj_property>
+         <obj_property name="ObjectShortName">gr[1,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/pcpu/gr[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,15:0]</obj_property>
+         <obj_property name="ObjectShortName">gr[2,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/pcpu/gr[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,15:0]</obj_property>
+         <obj_property name="ObjectShortName">gr[3,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/pcpu/gr[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,15:0]</obj_property>
+         <obj_property name="ObjectShortName">gr[4,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/pcpu/gr[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,15:0]</obj_property>
+         <obj_property name="ObjectShortName">gr[5,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/pcpu/gr[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,15:0]</obj_property>
+         <obj_property name="ObjectShortName">gr[6,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/pcpu/gr[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,15:0]</obj_property>
+         <obj_property name="ObjectShortName">gr[7,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
