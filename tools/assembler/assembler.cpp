@@ -3,6 +3,11 @@
 #include <sstream>
 using namespace std;
 
+#define INIT_ALL_MEM
+#ifdef INIT_ALL_MEM
+#define TOTAL_DEPTH 256
+#endif
+
 #include "opcode.h"
 #define DOLLAR ch
 #define COMMA ch
@@ -16,8 +21,8 @@ using namespace std;
 
 string getBin(int n, int bits) {
 	string bin;
-	for (int i = 0; i < bits; i++) {
-		bin += n & (1 << i) ? '1': '0';
+	for (int i = bits - 1; i >= 0; i--) {
+		bin += (n & (1 << i)) ? '1': '0';
 	}
 	return bin;
 }
@@ -119,12 +124,20 @@ int main() {
 			machineCode = BNC + getBin(r1, 3) + getBin(immediate, 8);
 		} else {
 			cerr << line + 1 << ": unknown instruction \"" << asmbl << "\""<< endl;
-			machineCode = NOP + getBin(0, 16-5);
+			machineCode = NOP + getBin(0, 11);
 		}
 		cout << machineCode << endl;
 		line++;
 		ss.clear();
 		ss.str("");
 	}
+#ifdef INIT_ALL_MEM
+	int rest = TOTAL_DEPTH - line;
+	string fxxk = getBin(0, 16) + '\n';
+	while (rest--) {
+		cout << fxxk;
+	}
+	cout << flush;
+#endif
 	return 0;
 }

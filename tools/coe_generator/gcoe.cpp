@@ -5,7 +5,7 @@ using namespace std;
 int main(int argc, char const *argv[]) {
 	int radix;
 	if (argc < 2)
-		radix = 10;
+		radix = 2;
 	else
 		radix = atoi(argv[1]);
 	cout << "MEMORY_INITIALIZATION_RADIX=" << radix << ";\n"

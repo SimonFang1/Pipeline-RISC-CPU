@@ -10,8 +10,7 @@ g++ coe_generator/gcoe.cpp -o gcoe -O3
 ## execute
 gcoe < inst.txt > init.coe    \# or
 
-gcoe 10 < inst.txt > init.coe \# for decimal data
-
-
-
 gcoe 2 < inst.txt > init.coe \# for binary data
+
+
+gcoe 10 < inst.txt > init.coe \# for decimal data
