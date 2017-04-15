@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-16T01:22:33</DateModified>
+  <DateModified>2017-04-16T01:25:53</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>d:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace\</ImplementationReportsDirectory>
-  <DateInitialized>2017-04-16T01:22:07</DateInitialized>
+  <SummaryTimeStamp>2017-04-16T00:52:10</SummaryTimeStamp>
+  <SavedFilePath>D:/ISEDesign/ESAD/week6/PCPU/iseconfig/top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/ISEDesign/ESAD/week6/PCPU\</ImplementationReportsDirectory>
+  <DateInitialized>2017-04-08T14:29:37</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
