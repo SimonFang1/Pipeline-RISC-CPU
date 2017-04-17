@@ -229,12 +229,12 @@ module PCPU(
 			  `CMP: ALUop = `A_SUB;
 			  `SUBC: ALUop = `CF == 1'b1 ? `A_SUBMNS : `A_SUB;
 			  `AND: ALUop = `A_AND;
-			  `OR: ALUop = `A_OR;
 			  `XOR: ALUop = `A_XOR;
 			  `NOT: ALUop = `A_NOT;
 			  `SL: ALUop = `A_SL;
 			  `SRL: ALUop = `A_SRL;
 			  `SRA: ALUop = `A_SRA;
+			  `OR,
 			  `JUMP,
 			  `MOV: ALUop = `A_OR;
 			  default: ALUop = `A_OR;
