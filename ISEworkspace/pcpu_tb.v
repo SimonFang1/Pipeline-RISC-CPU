@@ -22,9 +22,6 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 `include "header.v"
-//`define SYNTHESIZE
-// i_mem, d_mem doesn't work correctly when simualtion
-// so SYNTHESIZE is not defined
 module pcpu_tb;
 
 	// Inputs
@@ -61,21 +58,6 @@ module pcpu_tb;
 		.show_gr(show_gr)
 	);
 
-`ifdef SYNTHESIZE
-	 i_mem i_mem0(
-      .clka(clock),
-      .addra(i_addr),
-      .douta(i_datain)
-    );
-
-	 d_mem d_mem0 (
-        .clka(clock),
-		  .wea(d_we),
-		  .addra(d_addr),
-		  .dina(d_dataout),
-		  .douta(d_datain)
-	 );
-`else
 	 imem imem0(
         .address(i_addr),
 	     .q(i_datain)
@@ -88,7 +70,6 @@ module pcpu_tb;
 		  .data(d_dataout),
 		  .q(d_datain)
     );
-`endif
 
 	initial begin
 		// Initialize Inputs
