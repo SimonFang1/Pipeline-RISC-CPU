@@ -1,0 +1,1830 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Title    (top)
+  /Author   (Simon)
+  /Producer (Concept Engineering GmbH)
+  /Creator  (Nlview 6.2.4  2012-10-10 bk=1.2632 VDI=32 GEI=33)
+  /CreationDate (D:20170417152825)
+>>
+endobj
+2 0 obj
+<<
+  /Type     /Catalog
+  /Pages    3 0 R
+  /Outlines 7 0 R
+  /PageMode /UseThumbs
+  /ViewerPreferences << /DisplayDocTitle true >>
+>>
+endobj
+4 0 obj
+<<
+  /Type     /Font
+  /Subtype  /Type1
+  /Name     /F1
+  /BaseFont /Helvetica
+  /Encoding /MacRomanEncoding
+>>
+endobj
+5 0 obj
+<<
+  /ExtGState  << /GS 6 0 R >>
+  /Font       << /F1 4 0 R >>
+  /ColorSpace << /PCS [/Pattern /DeviceRGB] >>
+  /Pattern    8 0 R
+>>
+endobj
+6 0 obj
+<<
+  /Type /ExtGState
+  /LC   0
+  /LJ   0
+  /ML   4.0
+>>
+endobj
+%
+% Nlview page 1
+% (user space scaling 0.324211)
+%
+9 0 obj
+<<
+  /Type      /Page
+  /Parent    3 0 R
+  /Resources 5 0 R
+  /Contents  10 0 R
+  /MediaBox  [0 0 612 792]
+  /Rotate    0
+>>
+endobj
+10 0 obj
+<<
+  /Length 12436
+>>
+stream
+1 0 0 1 0 268.316 cm
+1 0 0 1 28.8 28.8 cm
+0.324211 0 0 -0.324211 0 0 cm
+1 0 0 1 0 -610 cm
+0 0 1710 610 re
+W n
+/GS gs
+1 0 0 1 0 10 cm
+q
+1.000 1.000 1.000 rg
+0 -10 1710 611 re
+f
+Q
+q
+0.980 0.980 0.980 rg
+58 20 m
+1652 20 l
+1652 20 l
+1655 20 l
+1658 22 l
+1660 25 l
+1660 28 l
+1660 28 l
+1660 562 l
+1660 562 l
+1660 565 l
+1658 568 l
+1655 570 l
+1652 570 l
+1652 570 l
+58 570 l
+58 570 l
+55 570 l
+52 568 l
+50 565 l
+50 562 l
+50 562 l
+50 28 l
+50 28 l
+50 25 l
+52 22 l
+55 20 l
+h f
+Q
+1 w
+0.000 0.000 0.000 RG
+58 20 m
+1652 20 l
+S
+1660 28 m
+1660.09 27.3367 1660.09 26.6633 1660 26 c
+1659.45 22.134 1655.87 19.4477 1652 20 c
+S
+1660 28 m
+1660 562 l
+S
+1652 570 m
+1652.66 570.095 1653.34 570.095 1654 570 c
+1657.87 569.448 1660.55 565.866 1660 562 c
+S
+1652 570 m
+58 570 l
+S
+50 562 m
+49.9052 562.663 49.9052 563.337 50 564 c
+50.5523 567.866 54.134 570.552 58 570 c
+S
+50 562 m
+50 28 l
+S
+58 20 m
+57.3367 19.9052 56.6633 19.9052 56 20 c
+52.134 20.5523 49.4477 24.134 50 28 c
+S
+3 w
+55 31 m
+67 31 l
+S
+1 w
+53 23 16 16 re
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 855 18 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-15.5 2 Td
+(m_clk) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 855 572 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-36.5 -9 Td
+(manual_clock) Tj
+ET
+Q
+40 270 m
+50 270 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 48 268 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-23 2 Td
+(clock) Tj
+ET
+Q
+40 290 m
+50 290 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 48 288 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-22 2 Td
+(reset) Tj
+ET
+Q
+40 210 m
+50 210 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 48 208 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-28 2 Td
+(button) Tj
+ET
+Q
+1670 90 m
+1660 90 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1662 88 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(signal) Tj
+ET
+Q
+60 270 m
+50 270 l
+S
+60 290 m
+50 290 l
+S
+60 210 m
+50 210 l
+S
+1650 90 m
+1660 90 l
+S
+q
+1.000 1.000 0.800 rg
+450 330 m
+490 345 l
+490 375 l
+450 390 l
+h f
+Q
+450 330 m
+490 345 l
+490 375 l
+450 390 l
+h S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 470 328 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-78 2 Td
+(GND_2_o_GND_2_o_mux_5) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 474 384 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -9 Td
+(RTL_mux_2) Tj
+ET
+Q
+470 390 m
+470 382 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 468 390 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-22 -7 Td
+(cond) Tj
+ET
+Q
+3 w
+440 350 m
+450 350 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 448 349 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-31 2 Td
+(d0[1:0]) Tj
+ET
+Q
+440 370 m
+450 370 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 448 369 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-31 2 Td
+(d1[1:0]) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 413 369 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+-30 2 Td
+(V=B"01") Tj
+ET
+Q
+500 360 m
+490 360 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 492 359 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(o[1:0]) Tj
+ET
+Q
+q
+1.000 1.000 0.800 rg
+450 450 m
+490 465 l
+490 495 l
+450 510 l
+h f
+Q
+1 w
+450 450 m
+490 465 l
+490 495 l
+450 510 l
+h S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 470 448 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-78.5 2 Td
+(GND_2_o_PWR_2_o_mux_7) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 474 504 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -9 Td
+(RTL_mux_2) Tj
+ET
+Q
+470 510 m
+470 502 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 468 510 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-22 -7 Td
+(cond) Tj
+ET
+Q
+3 w
+440 470 m
+450 470 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 448 469 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-31 2 Td
+(d0[1:0]) Tj
+ET
+Q
+440 490 m
+450 490 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 448 489 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-31 2 Td
+(d1[1:0]) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 413 489 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+-30 2 Td
+(V=B"10") Tj
+ET
+Q
+500 480 m
+490 480 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 492 479 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(o[1:0]) Tj
+ET
+Q
+q
+1.000 1.000 0.800 rg
+150 220 m
+150 208.954 141.046 200 130 200 c
+118.954 200 110 208.954 110 220 c
+110 231.046 118.954 240 130 240 c
+141.046 240 150 231.046 150 220 c
+f
+Q
+1 w
+150 220 m
+150 208.954 141.046 200 130 200 c
+118.954 200 110 208.954 110 220 c
+110 231.046 118.954 240 130 240 c
+141.046 240 150 231.046 150 220 c
+S
+150 220 m
+150 220 l
+S
+110 210 m
+112 211 l
+S
+110 230 m
+112 229 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 130 220 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-3.5 -4.5 Td
+(=) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 125 194 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(button_PWR_2_o_equal_7) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 125 246 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -9 Td
+(RTL_equal_1) Tj
+ET
+Q
+160 220 m
+150 220 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 152 219 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(o) Tj
+ET
+Q
+3 w
+100 210 m
+110 210 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 108 209 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-6 2 Td
+(a) Tj
+ET
+Q
+100 230 m
+110 230 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 108 229 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-6 2 Td
+(b) Tj
+ET
+Q
+q
+1.000 1.000 0.800 rg
+1490 70 m
+1540 70 l
+1540 150 l
+1490 150 l
+h f
+Q
+1 w
+1490 70 m
+1540 70 l
+1540 150 l
+1490 150 l
+h S
+1490 113 m
+1497 110 l
+1490 107 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1520 68 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(signal) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1520 152 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -9 Td
+(RTL_FDCPE) Tj
+ET
+Q
+1480 90 m
+1490 90 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1492 90 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.5 Td
+(d) Tj
+ET
+Q
+1480 110 m
+1490 110 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1499 110 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.5 Td
+(clk) Tj
+ET
+Q
+1510 60 m
+1510 70 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1510 72 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-2.5 -7 Td
+(c) Tj
+ET
+Q
+1510 160 m
+1510 150 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1510 148 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-3 2 Td
+(p) Tj
+ET
+Q
+1480 130 m
+1490 130 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1492 130 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.5 Td
+(e) Tj
+ET
+Q
+1550 90 m
+1540 90 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1538 90 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-6 -3.5 Td
+(q) Tj
+ET
+Q
+q
+1.000 1.000 0.800 rg
+1288 80 m
+1288 77.7909 1286.21 76 1284 76 c
+1281.79 76 1280 77.7909 1280 80 c
+1280 82.2091 1281.79 84 1284 84 c
+1286.21 84 1288 82.2091 1288 80 c
+f
+Q
+q
+1.000 1.000 0.800 rg
+1250 80 m
+1250 68 l
+1280 80 l
+1250 92 l
+h f
+Q
+1288 80 m
+1288 77.7909 1286.21 76 1284 76 c
+1281.79 76 1280 77.7909 1280 80 c
+1280 82.2091 1281.79 84 1284 84 c
+1286.21 84 1288 82.2091 1288 80 c
+S
+1250 80 m
+1250 68 l
+1280 80 l
+1250 92 l
+h S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1252 66 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(signal_INV_3) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1252 94 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -9 Td
+(RTL_INV) Tj
+ET
+Q
+1240 80 m
+1250 80 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1248 79 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-2 2 Td
+(i) Tj
+ET
+Q
+1300 80 m
+1288 80 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1290 79 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(o) Tj
+ET
+Q
+q
+1.000 1.000 0.800 rg
+910 320 m
+980 320 l
+980 400 l
+910 400 l
+h f
+Q
+910 320 m
+980 320 l
+980 400 l
+910 400 l
+h S
+910 343 m
+917 340 l
+910 337 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 940 318 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(state) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 940 402 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -9 Td
+(RTL_wide_fdcpe_2) Tj
+ET
+Q
+900 340 m
+910 340 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 919 340 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.5 Td
+(clk) Tj
+ET
+Q
+3 w
+900 360 m
+910 360 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 912 360 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.5 Td
+(d[1:0]) Tj
+ET
+Q
+930 310 m
+930 320 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 927 322 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -7 Td
+(c[1:0]) Tj
+ET
+Q
+930 410 m
+930 400 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 927 398 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(p[1:0]) Tj
+ET
+Q
+900 380 m
+910 380 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 912 380 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 -3.5 Td
+(e[1:0]) Tj
+ET
+Q
+990 360 m
+980 360 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 978 360 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-25 -3.5 Td
+(q[1:0]) Tj
+ET
+Q
+q
+1.000 1.000 0.800 rg
+1290 170 m
+1290 158.954 1281.05 150 1270 150 c
+1258.95 150 1250 158.954 1250 170 c
+1250 181.046 1258.95 190 1270 190 c
+1281.05 190 1290 181.046 1290 170 c
+f
+Q
+1 w
+1290 170 m
+1290 158.954 1281.05 150 1270 150 c
+1258.95 150 1250 158.954 1250 170 c
+1250 181.046 1258.95 190 1270 190 c
+1281.05 190 1290 181.046 1290 170 c
+S
+1290 170 m
+1290 170 l
+S
+1250 160 m
+1252 161 l
+S
+1250 180 m
+1252 179 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1270 170 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-3.5 -4.5 Td
+(=) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1265 144 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(state[1]_GND_2_o_equal_2) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1265 196 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -9 Td
+(RTL_equal_2) Tj
+ET
+Q
+1300 170 m
+1290 170 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1292 169 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(o) Tj
+ET
+Q
+3 w
+1240 160 m
+1250 160 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1248 159 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-25 2 Td
+(a[1:0]) Tj
+ET
+Q
+1240 180 m
+1250 180 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1248 179 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-25 2 Td
+(b[1:0]) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 1219 179 cm
+BT
+/F1 8 Tf
+1 0 0 -1 0 0 Tm
+-30 2 Td
+(V=B"01") Tj
+ET
+Q
+q
+1.000 1.000 0.800 rg
+680 360 m
+720 375 l
+720 405 l
+680 420 l
+h f
+Q
+1 w
+680 360 m
+720 375 l
+720 405 l
+680 420 l
+h S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 700 358 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+-86.5 2 Td
+(state[1]_GND_2_o_wide_mux_8) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 704 414 cm
+BT
+/F1 12 Tf
+1 0 0 -1 0 0 Tm
+0 -9 Td
+(RTL_wide_mux_2_8) Tj
+ET
+Q
+3 w
+700 420 m
+700 412 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 698 420 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-32 -7 Td
+(sel[1:0]) Tj
+ET
+Q
+670 390 m
+680 390 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 678 389 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-39 2 Td
+(data[7:0]) Tj
+ET
+Q
+730 390 m
+720 390 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 722 389 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+0 2 Td
+(o[1:0]) Tj
+ET
+Q
+1 w
+332 550 m
+348 550 l
+S
+335 553 m
+345 553 l
+S
+338 556 m
+342 556 l
+S
+592 460 m
+608 460 l
+S
+595 463 m
+605 463 l
+S
+598 466 m
+602 466 l
+S
+1142 220 m
+1158 220 l
+S
+1145 223 m
+1155 223 l
+S
+1148 226 m
+1152 226 l
+S
+80 170 m
+80 166 l
+S
+72 166 m
+88 166 l
+S
+320 310 m
+320 306 l
+S
+312 306 m
+328 306 l
+S
+600 340 m
+600 336 l
+S
+592 336 m
+608 336 l
+S
+880 280 m
+880 276 l
+S
+872 276 m
+888 276 l
+S
+1150 120 m
+1150 116 l
+S
+1142 116 m
+1158 116 l
+S
+1502 170 m
+1518 170 l
+S
+1505 173 m
+1515 173 l
+S
+1508 176 m
+1512 176 l
+S
+922 420 m
+938 420 l
+S
+925 423 m
+935 423 l
+S
+928 426 m
+932 426 l
+S
+3 w
+0.000 0.502 0.000 RG
+580 357 m
+580 483 l
+S
+500 360 m
+580 360 l
+S
+0.000 0.000 0.000 RG
+580 385 m
+585 390 l
+S
+0.098 0.706 0.000 RG
+585 390 m
+670 390 l
+S
+0.000 0.502 0.000 RG
+500 480 m
+580 480 l
+S
+0.000 0.000 0.000 RG
+q
+0.000 0.000 0.000 rg
+581 355 m
+581 365 l
+570 360 l
+f
+Q
+q
+0.000 0.000 0.000 rg
+581 475 m
+581 485 l
+570 480 l
+f
+Q
+0.000 0.502 0.000 RG
+730 390 m
+860 390 l
+860 360 l
+900 360 l
+S
+700 420 m
+700 450 l
+1110 450 l
+1110 160 l
+1240 160 l
+S
+990 360 m
+1110 360 l
+S
+q
+0.000 0.502 0.000 rg
+1107 357 7 7 re
+f
+Q
+1 w
+0.098 0.706 0.000 RG
+1510 160 m
+1510 170 l
+S
+930 410 m
+930 420 l
+S
+2 w
+1240 180 m
+1155 180 l
+S
+1 w
+0.000 0.000 0.000 RG
+1155 180 m
+1150 185 l
+S
+0.098 0.706 0.000 RG
+1150 185 m
+1150 220 l
+S
+2 w
+670 390 m
+605 390 l
+S
+1 w
+0.000 0.000 0.000 RG
+605 390 m
+600 395 l
+S
+0.098 0.706 0.000 RG
+600 395 m
+600 460 l
+S
+440 350 m
+340 350 l
+340 550 l
+S
+0.000 0.000 0.000 RG
+340 365 m
+345 370 l
+S
+2 w
+0.098 0.706 0.000 RG
+345 370 m
+440 370 l
+S
+1 w
+340 470 m
+440 470 l
+S
+0.000 0.000 0.000 RG
+340 485 m
+345 490 l
+S
+2 w
+0.098 0.706 0.000 RG
+345 490 m
+440 490 l
+S
+1 w
+q
+0.098 0.706 0.000 rg
+338 468 5 5 re
+f
+Q
+1150 120 m
+1150 175 l
+S
+0.000 0.000 0.000 RG
+1150 175 m
+1155 180 l
+S
+2 w
+0.098 0.706 0.000 RG
+1155 180 m
+1240 180 l
+S
+1 w
+880 280 m
+880 380 l
+900 380 l
+S
+600 340 m
+600 385 l
+S
+0.000 0.000 0.000 RG
+600 385 m
+605 390 l
+S
+2 w
+0.098 0.706 0.000 RG
+605 390 m
+670 390 l
+S
+1 w
+320 310 m
+320 485 l
+S
+0.000 0.000 0.000 RG
+320 485 m
+325 490 l
+S
+2 w
+0.098 0.706 0.000 RG
+325 490 m
+440 490 l
+S
+1 w
+0.000 0.000 0.000 RG
+320 365 m
+325 370 l
+S
+2 w
+0.098 0.706 0.000 RG
+325 370 m
+440 370 l
+S
+1 w
+80 170 m
+80 230 l
+100 230 l
+S
+60 210 m
+100 210 l
+S
+160 220 m
+300 220 l
+300 540 l
+470 540 l
+470 510 l
+S
+300 420 m
+470 420 l
+470 390 l
+S
+q
+0.098 0.706 0.000 rg
+298 418 5 5 re
+f
+Q
+60 270 m
+860 270 l
+S
+q
+0.098 0.706 0.000 rg
+858 268 5 5 re
+f
+Q
+900 340 m
+860 340 l
+860 260 l
+1440 260 l
+1440 110 l
+1480 110 l
+S
+60 290 m
+1090 290 l
+1090 40 l
+1510 40 l
+1510 60 l
+S
+q
+0.098 0.706 0.000 rg
+928 288 5 5 re
+f
+Q
+930 290 m
+930 310 l
+S
+1240 80 m
+1130 80 l
+1130 240 l
+1630 240 l
+1630 90 l
+1550 90 l
+S
+1630 90 m
+1650 90 l
+S
+q
+0.098 0.706 0.000 rg
+1628 88 5 5 re
+f
+Q
+1300 80 m
+1440 80 l
+1440 90 l
+1480 90 l
+S
+1300 170 m
+1460 170 l
+1460 130 l
+1480 130 l
+S
+q
+0.000 0.000 0.000 rg
+1 0 0 1 575 359 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-14 2 Td
+(1:0) Tj
+ET
+Q
+q
+0.000 0.000 0.000 rg
+1 0 0 1 575 479 cm
+BT
+/F1 10 Tf
+1 0 0 -1 0 0 Tm
+-14 2 Td
+(1:0) Tj
+ET
+Q
+endstream
+endobj
+3 0 obj
+<<
+  /Type    /Pages
+  /Kids
+  [
+  9 0 R
+  ]
+  /Count   1
+  /ProcSet [/PDF /Text]
+>>
+endobj
+13 0 obj
+<<
+  /Title  (m_clk manual_clock)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 35 301 576 490]
+  /Parent 12 0 R
+  /Next   14 0 R
+>>
+endobj
+14 0 obj
+<<
+  /Title  (m_clk|GND_2_o_GND_2_o_mux_5 RTL_mux_2)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 152 361 206 389]
+  /Parent 12 0 R
+  /Prev   13 0 R
+  /Next   15 0 R
+>>
+endobj
+15 0 obj
+<<
+  /Title  (m_clk|GND_2_o_PWR_2_o_mux_7 RTL_mux_2)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 152 322 206 350]
+  /Parent 12 0 R
+  /Prev   14 0 R
+  /Next   16 0 R
+>>
+endobj
+16 0 obj
+<<
+  /Title  (m_clk|button_PWR_2_o_equal_7 RTL_equal_1)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 61 407 116 433]
+  /Parent 12 0 R
+  /Prev   15 0 R
+  /Next   17 0 R
+>>
+endobj
+17 0 obj
+<<
+  /Title  (m_clk|signal RTL_FDCPE)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 508 437 544 474]
+  /Parent 12 0 R
+  /Prev   16 0 R
+  /Next   18 0 R
+>>
+endobj
+18 0 obj
+<<
+  /Title  (m_clk|signal_INV_3 RTL_INV)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 430 456 457 474]
+  /Parent 12 0 R
+  /Prev   17 0 R
+  /Next   19 0 R
+>>
+endobj
+19 0 obj
+<<
+  /Title  (m_clk|state RTL_wide_fdcpe_2)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 320 356 366 393]
+  /Parent 12 0 R
+  /Prev   18 0 R
+  /Next   20 0 R
+>>
+endobj
+20 0 obj
+<<
+  /Title  (m_clk|state[1]_GND_2_o_equal_2 RTL_equal_2)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 414 423 487 449]
+  /Parent 12 0 R
+  /Prev   19 0 R
+  /Next   21 0 R
+>>
+endobj
+21 0 obj
+<<
+  /Title  (m_clk|state[1]_GND_2_o_wide_mux_8 RTL_wide_mux_2_8)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 227 351 292 380]
+  /Parent 12 0 R
+  /Prev   20 0 R
+>>
+endobj
+12 0 obj
+<<
+  /Title  (instances)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 11 0 R
+  /First  13 0 R
+  /Last   21 0 R
+  /Count  9
+  /Next   22 0 R
+>>
+endobj
+22 0 obj
+<<
+  /Title  (ports)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 11 0 R
+  /First  0 0 R
+  /Last   0 0 R
+  /Count  0
+  /Prev   12 0 R
+  /Next   23 0 R
+>>
+endobj
+23 0 obj
+<<
+  /Title  (portBuses)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 11 0 R
+  /First  0 0 R
+  /Last   0 0 R
+  /Count  0
+  /Prev   22 0 R
+  /Next   24 0 R
+>>
+endobj
+25 0 obj
+<<
+  /Title  (m_clk|GND_2_o)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 138 313 518 439]
+  /Parent 24 0 R
+  /Next   26 0 R
+>>
+endobj
+26 0 obj
+<<
+  /Title  (m_clk|PWR_2_o)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 54 332 430 452]
+  /Parent 24 0 R
+  /Prev   25 0 R
+  /Next   27 0 R
+>>
+endobj
+27 0 obj
+<<
+  /Title  (m_clk|button)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 48 423 61 423]
+  /Parent 24 0 R
+  /Prev   26 0 R
+  /Next   28 0 R
+>>
+endobj
+28 0 obj
+<<
+  /Title  (m_clk|button_PWR_2_o_equal_7_o)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 80 316 181 420]
+  /Parent 24 0 R
+  /Prev   27 0 R
+  /Next   29 0 R
+>>
+endobj
+29 0 obj
+<<
+  /Title  (m_clk|clock)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 48 381 508 456]
+  /Parent 24 0 R
+  /Prev   28 0 R
+  /Next   30 0 R
+>>
+endobj
+30 0 obj
+<<
+  /Title  (m_clk|reset)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 47 391 518 478]
+  /Parent 24 0 R
+  /Prev   29 0 R
+  /Next   31 0 R
+>>
+endobj
+31 0 obj
+<<
+  /Title  (m_clk|signal)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 394 413 563 466]
+  /Parent 24 0 R
+  /Prev   30 0 R
+  /Next   32 0 R
+>>
+endobj
+32 0 obj
+<<
+  /Title  (m_clk|signal_INV_3_o)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 449 462 508 466]
+  /Parent 24 0 R
+  /Prev   31 0 R
+  /Next   33 0 R
+>>
+endobj
+33 0 obj
+<<
+  /Title  (m_clk|state[1]_GND_2_o_equal_2_o)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 449 436 508 449]
+  /Parent 24 0 R
+  /Prev   32 0 R
+>>
+endobj
+24 0 obj
+<<
+  /Title  (nets)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 11 0 R
+  /First  25 0 R
+  /Last   33 0 R
+  /Count  9
+  /Prev   23 0 R
+  /Next   34 0 R
+>>
+endobj
+35 0 obj
+<<
+  /Title  (@m_clk|GND_2_o_PWR_2_o_mux_7_OU)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 190 333 246 377]
+  /Parent 34 0 R
+  /Next   36 0 R
+>>
+endobj
+36 0 obj
+<<
+  /Title  (@m_clk|nextstate)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 264 364 321 375]
+  /Parent 34 0 R
+  /Prev   35 0 R
+  /Next   37 0 R
+>>
+endobj
+37 0 obj
+<<
+  /Title  (@m_clk|state)
+  /C      [0.0 0.0 0.4]
+  /Dest   [9 0 R /FitR 254 344 431 440]
+  /Parent 34 0 R
+  /Prev   36 0 R
+>>
+endobj
+34 0 obj
+<<
+  /Title  (netBundles)
+  /C      [0.0 0.4 0.0]
+  /F      1
+  /Parent 11 0 R
+  /First  35 0 R
+  /Last   37 0 R
+  /Count  3
+  /Prev   24 0 R
+>>
+endobj
+11 0 obj
+<<
+  /Title  (Nlview page 1)
+  /C      [0.4 0.0 0.0]
+  /Dest   [9 0 R /Fit]
+  /Parent 7 0 R
+  /First  12 0 R
+  /Last   34 0 R
+  /Count  5
+>>
+endobj
+8 0 obj
+<<
+>>
+endobj
+7 0 obj
+<<
+  /Type  /Outline
+  /First 11 0 R
+  /Last  11 0 R
+  /Count 1
+>>
+endobj
+xref
+0 38
+0000000000 65535 f 
+0000000009 00000 n 
+0000000205 00000 n 
+0000013385 00000 n 
+0000000355 00000 n 
+0000000482 00000 n 
+0000000630 00000 n 
+0000018055 00000 n 
+0000018034 00000 n 
+0000000754 00000 n 
+0000000894 00000 n 
+0000017877 00000 n 
+0000015099 00000 n 
+0000013485 00000 n 
+0000013635 00000 n 
+0000013822 00000 n 
+0000014009 00000 n 
+0000014198 00000 n 
+0000014370 00000 n 
+0000014546 00000 n 
+0000014724 00000 n 
+0000014916 00000 n 
+0000015259 00000 n 
+0000015430 00000 n 
+0000017069 00000 n 
+0000015605 00000 n 
+0000015751 00000 n 
+0000015913 00000 n 
+0000016073 00000 n 
+0000016252 00000 n 
+0000016412 00000 n 
+0000016572 00000 n 
+0000016734 00000 n 
+0000016904 00000 n 
+0000017716 00000 n 
+0000017241 00000 n 
+0000017405 00000 n 
+0000017571 00000 n 
+trailer
+<<
+  /Size 38
+  /Info 1 0 R
+  /Root 2 0 R
+>>
+startxref
+18137
+%%EOF
+1 0 obj<</Author(Simon)/CreationDate(D:20170417152825Z)/Creator(Nlview 6.2.4  2012-10-10 bk=1.2632 VDI=32 GEI=33)/ModDate(D:20170417154125+08'00')/Producer(Concept Engineering GmbH)/Title(top)>>endobj2 0 obj<</Metadata 38 0 R/Outlines 7 0 R/PageMode/UseThumbs/Pages 3 0 R/Type/Catalog/ViewerPreferences<</DisplayDocTitle true>>>>endobj9 0 obj<</Contents 10 0 R/CropBox[24.9336 286.529 593.872 506.397]/MediaBox[0 0 612 792]/Parent 3 0 R/Resources 5 0 R/Rotate 0/Type/Page>>endobj38 0 obj<</Length 3462/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.157285, 2014/12/12-00:43:15        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Simon</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">top</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <xmp:CreateDate>2017-04-17T15:28:25</xmp:CreateDate>
+         <xmp:CreatorTool>Nlview 6.2.4  2012-10-10 bk=1.2632 VDI=32 GEI=33</xmp:CreatorTool>
+         <xmp:ModifyDate>2017-04-17T15:41:25+08:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2017-04-17T15:41:25+08:00</xmp:MetadataDate>
+         <pdf:Producer>Concept Engineering GmbH</pdf:Producer>
+         <xmpMM:DocumentID>uuid:7a93e900-64cd-44c3-80e8-e9f4f4967cd0</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:e7ee4c02-9364-46b8-8fb7-33b10352044f</xmpMM:InstanceID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+endstreamendobjxref
+0 3
+0000000000 65535 f
+0000018982 00000 n
+0000019185 00000 n
+9 1
+0000019323 00000 n
+38 1
+0000019470 00000 n
+trailer
+<</Size 39/Root 2 0 R/Info 1 0 R/ID[<B32F133FAD474345893776DE0CBAB758><B32F133FAD474345893776DE0CBAB758>]/Prev 18137>>
+startxref
+23010
+%%EOF
+1 0 obj<</Author(Simon)/CreationDate(D:20170417152825Z)/Creator(Nlview 6.2.4  2012-10-10 bk=1.2632 VDI=32 GEI=33)/ModDate(D:20170418112357+08'00')/Producer(Concept Engineering GmbH)/Title(top)>>endobj9 0 obj<</Contents 10 0 R/CropBox[32.66 298.487 580.532 495.861]/MediaBox[0 0 612 792]/Parent 3 0 R/Resources 5 0 R/Rotate 0/Type/Page>>endobj38 0 obj<</Length 3462/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c015 81.157285, 2014/12/12-00:43:15        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <dc:format>application/pdf</dc:format>
+         <dc:creator>
+            <rdf:Seq>
+               <rdf:li>Simon</rdf:li>
+            </rdf:Seq>
+         </dc:creator>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">top</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <xmp:CreateDate>2017-04-17T15:28:25</xmp:CreateDate>
+         <xmp:CreatorTool>Nlview 6.2.4  2012-10-10 bk=1.2632 VDI=32 GEI=33</xmp:CreatorTool>
+         <xmp:ModifyDate>2017-04-18T11:23:57+08:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2017-04-18T11:23:57+08:00</xmp:MetadataDate>
+         <pdf:Producer>Concept Engineering GmbH</pdf:Producer>
+         <xmpMM:DocumentID>uuid:7a93e900-64cd-44c3-80e8-e9f4f4967cd0</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:eeabb162-716f-4c75-adbe-940c09495b80</xmpMM:InstanceID>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+endstreamendobjxref
+0 2
+0000000000 65535 f
+0000023286 00000 n
+9 1
+0000023489 00000 n
+38 1
+0000023634 00000 n
+trailer
+<</Size 39/Root 2 0 R/Info 1 0 R/ID[<B32F133FAD474345893776DE0CBAB758><07A2E3EDB7A41A4AA43B3C09ADF26CF3>]/Prev 23010>>
+startxref
+27174
+%%EOF
