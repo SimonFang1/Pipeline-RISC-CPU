@@ -55,9 +55,6 @@ module PCPU(
 	 
 	 //*********** General Register **********//
 	 reg [15:0] gr[0:7];
-	 initial begin
-	     gr[0] = 0;
-	 end
 	 //************* WB *************//
     always @(posedge clock or posedge reset) begin
         if (reset) begin

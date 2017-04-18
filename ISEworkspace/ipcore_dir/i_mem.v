@@ -36,7 +36,7 @@
 
 `timescale 1ns/1ps
 
-//synthesis attribute box_type <i_mem> "black_box" 
+//synthesis attribute box_type <i_mem> "black_box"
 module i_mem(
   clka,
   addra,

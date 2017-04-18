@@ -121,11 +121,6 @@ module top(
       .addra(i_addr),
       .douta(i_datain)
    );
-	 
-//	 imem imem0(
-//        .address(i_addr),
-//	     .q(i_datain)
-//    );
 
 	 d_mem d_mem0 (
         .clka(clock),
@@ -134,13 +129,5 @@ module top(
 		  .dina(d_dataout),
 		  .douta(d_datain)
 	 );
-
-//	 dmem dmem0(
-//	     .clock(clock),
-//		  .address(d_addr),
-//		  .we(d_we),
-//		  .data(d_dataout),
-//		  .q(d_datain)
-//    );
 	 
 endmodule

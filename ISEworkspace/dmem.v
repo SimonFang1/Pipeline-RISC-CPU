@@ -18,6 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+// this module is used for simulation test only
+// IP CORE d_mem is used for for synthesize
 module dmem(
 	 input clock,
 	 input [7:0] address,
@@ -25,10 +28,13 @@ module dmem(
 	 input [15:0] data,
 	 output [15:0] q
     );
-    reg [15:0]ram[255:0];
+    reg [15:0] ram[0:255];
 	 assign q = ram[address];
-    always @(negedge clock) begin
+    always @(posedge clock) begin
         if (we)
             ram[address] <= data;
+	 end
+	 initial begin
+	     $readmemb("ipcore_dir/d_mem.mif", ram);
 	 end
 endmodule

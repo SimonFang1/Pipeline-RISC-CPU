@@ -18,6 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
+// this module is used for simulation test only
+// IP CORE i_mem is used for for synthesize
 module imem(
     input [7:0] address,
 	 output [15:0] q

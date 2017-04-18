@@ -3,14 +3,14 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="D:/ISEDesign/ESAD/week6/PCPU/pcpu_tb_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/pcpu_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="glbl" />
             <top_module name="pcpu_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="22" />
+   <WVObjectSize size="24" />
    <wvobject fp_name="/pcpu_tb/d_addr" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">d_addr[7:0]</obj_property>
       <obj_property name="ObjectShortName">d_addr[7:0]</obj_property>
@@ -84,6 +84,11 @@
       <obj_property name="ObjectShortName">reg_C1[15:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
+   <wvobject fp_name="/pcpu_tb/pcpu/smdr1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">smdr1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">smdr1[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
    <wvobject fp_name="/pcpu_tb/enable" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">enable</obj_property>
       <obj_property name="ObjectShortName">enable</obj_property>
@@ -152,6 +157,1291 @@
       <wvobject fp_name="/pcpu_tb/pcpu/gr[7]" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">[7,15:0]</obj_property>
          <obj_property name="ObjectShortName">gr[7,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/pcpu_tb/dmem0/ram" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ram[0:255,15:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:255,15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[0,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[1,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[2,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[3,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[4,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[5,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[6,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[7,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[8,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[9,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[10,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[11,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[12,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[13,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[14,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[15,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[16,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[17,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[18,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[19,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[20,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[21,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[22,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[23,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[24,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[25,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[26,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[27,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[28,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[29,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[30,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[31,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[32]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[32,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[32,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[33]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[33,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[33,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[34]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[34,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[34,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[35]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[35,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[35,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[36]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[36,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[36,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[37]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[37,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[37,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[38]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[38,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[38,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[39]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[39,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[39,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[40]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[40,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[40,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[41]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[41,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[41,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[42]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[42,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[42,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[43]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[43,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[43,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[44]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[44,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[44,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[45]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[45,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[45,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[46]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[46,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[46,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[47]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[47,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[47,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[48]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[48,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[48,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[49]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[49,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[49,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[50]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[50,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[50,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[51]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[51,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[51,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[52]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[52,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[52,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[53]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[53,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[53,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[54]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[54,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[54,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[55]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[55,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[55,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[56]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[56,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[56,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[57]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[57,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[57,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[58]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[58,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[58,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[59]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[59,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[59,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[60]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[60,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[60,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[61]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[61,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[61,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[62]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[62,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[62,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[63]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[63,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[63,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[64]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[64,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[64,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[65]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[65,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[65,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[66]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[66,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[66,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[67]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[67,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[67,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[68]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[68,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[68,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[69]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[69,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[69,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[70]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[70,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[70,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[71]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[71,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[71,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[72]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[72,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[72,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[73]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[73,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[73,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[74]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[74,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[74,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[75]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[75,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[75,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[76]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[76,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[76,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[77]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[77,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[77,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[78]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[78,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[78,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[79]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[79,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[79,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[80]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[80,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[80,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[81]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[81,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[81,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[82]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[82,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[82,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[83]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[83,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[83,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[84]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[84,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[84,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[85]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[85,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[85,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[86]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[86,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[86,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[87]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[87,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[87,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[88]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[88,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[88,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[89]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[89,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[89,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[90]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[90,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[90,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[91]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[91,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[91,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[92]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[92,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[92,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[93]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[93,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[93,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[94]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[94,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[94,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[95]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[95,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[95,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[96]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[96,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[96,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[97]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[97,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[97,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[98]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[98,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[98,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[99]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[99,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[99,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[100]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[100,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[100,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[101]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[101,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[101,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[102]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[102,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[102,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[103]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[103,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[103,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[104]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[104,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[104,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[105]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[105,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[105,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[106]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[106,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[106,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[107]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[107,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[107,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[108]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[108,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[108,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[109]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[109,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[109,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[110]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[110,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[110,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[111]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[111,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[111,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[112]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[112,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[112,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[113]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[113,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[113,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[114]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[114,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[114,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[115]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[115,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[115,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[116]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[116,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[116,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[117]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[117,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[117,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[118]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[118,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[118,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[119]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[119,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[119,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[120]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[120,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[120,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[121]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[121,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[121,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[122]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[122,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[122,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[123]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[123,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[123,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[124]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[124,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[124,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[125]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[125,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[125,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[126]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[126,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[126,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[127]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[127,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[127,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[128]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[128,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[128,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[129]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[129,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[129,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[130]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[130,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[130,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[131]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[131,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[131,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[132]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[132,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[132,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[133]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[133,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[133,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[134]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[134,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[134,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[135]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[135,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[135,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[136]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[136,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[136,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[137]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[137,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[137,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[138]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[138,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[138,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[139]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[139,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[139,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[140]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[140,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[140,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[141]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[141,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[141,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[142]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[142,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[142,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[143]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[143,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[143,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[144]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[144,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[144,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[145]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[145,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[145,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[146]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[146,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[146,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[147]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[147,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[147,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[148]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[148,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[148,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[149]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[149,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[149,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[150]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[150,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[150,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[151]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[151,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[151,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[152]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[152,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[152,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[153]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[153,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[153,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[154]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[154,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[154,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[155]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[155,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[155,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[156]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[156,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[156,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[157]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[157,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[157,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[158]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[158,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[158,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[159]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[159,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[159,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[160]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[160,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[160,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[161]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[161,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[161,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[162]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[162,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[162,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[163]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[163,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[163,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[164]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[164,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[164,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[165]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[165,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[165,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[166]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[166,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[166,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[167]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[167,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[167,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[168]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[168,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[168,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[169]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[169,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[169,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[170]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[170,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[170,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[171]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[171,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[171,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[172]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[172,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[172,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[173]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[173,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[173,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[174]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[174,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[174,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[175]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[175,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[175,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[176]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[176,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[176,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[177]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[177,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[177,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[178]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[178,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[178,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[179]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[179,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[179,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[180]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[180,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[180,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[181]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[181,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[181,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[182]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[182,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[182,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[183]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[183,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[183,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[184]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[184,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[184,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[185]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[185,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[185,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[186]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[186,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[186,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[187]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[187,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[187,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[188]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[188,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[188,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[189]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[189,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[189,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[190]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[190,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[190,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[191]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[191,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[191,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[192]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[192,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[192,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[193]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[193,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[193,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[194]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[194,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[194,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[195]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[195,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[195,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[196]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[196,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[196,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[197]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[197,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[197,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[198]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[198,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[198,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[199]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[199,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[199,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[200]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[200,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[200,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[201]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[201,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[201,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[202]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[202,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[202,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[203]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[203,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[203,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[204]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[204,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[204,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[205]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[205,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[205,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[206]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[206,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[206,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[207]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[207,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[207,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[208]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[208,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[208,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[209]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[209,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[209,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[210]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[210,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[210,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[211]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[211,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[211,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[212]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[212,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[212,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[213]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[213,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[213,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[214]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[214,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[214,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[215]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[215,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[215,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[216]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[216,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[216,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[217]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[217,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[217,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[218]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[218,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[218,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[219]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[219,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[219,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[220]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[220,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[220,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[221]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[221,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[221,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[222]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[222,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[222,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[223]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[223,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[223,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[224]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[224,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[224,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[225]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[225,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[225,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[226]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[226,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[226,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[227]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[227,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[227,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[228]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[228,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[228,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[229]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[229,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[229,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[230]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[230,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[230,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[231]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[231,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[231,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[232]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[232,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[232,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[233]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[233,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[233,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[234]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[234,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[234,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[235]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[235,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[235,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[236]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[236,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[236,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[237]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[237,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[237,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[238]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[238,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[238,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[239]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[239,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[239,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[240]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[240,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[240,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[241]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[241,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[241,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[242]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[242,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[242,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[243]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[243,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[243,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[244]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[244,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[244,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[245]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[245,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[245,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[246]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[246,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[246,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[247]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[247,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[247,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[248]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[248,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[248,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[249]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[249,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[249,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[250]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[250,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[250,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[251]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[251,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[251,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[252]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[252,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[252,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[253]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[253,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[253,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[254]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[254,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[254,15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/pcpu_tb/dmem0/ram[255]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[255,15:0]</obj_property>
+         <obj_property name="ObjectShortName">ram[255,15:0]</obj_property>
          <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
    </wvobject>

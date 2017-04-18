@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-16T01:25:53</DateModified>
+  <DateModified>2017-04-18T19:24:03</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>2017-04-16T00:52:10</SummaryTimeStamp>
-  <SavedFilePath>D:/ISEDesign/ESAD/week6/PCPU/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/ISEDesign/ESAD/week6/PCPU\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2017-04-18T15:59:52</SummaryTimeStamp>
+  <SavedFilePath>D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/iseconfig/top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-08T14:29:37</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="top_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="top_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="top_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="top_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="top_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="top.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />
