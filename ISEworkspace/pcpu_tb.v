@@ -22,11 +22,11 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 `include "header.v"
+`define SYNTHESIZE
 module pcpu_tb;
 
 	// Inputs
 	reg clock;
-	reg [15:0] d_datain;
 	reg enable;
 	reg reset;
 	reg [3:0] select_y;
@@ -39,6 +39,7 @@ module pcpu_tb;
 	wire d_we;
 	wire [7:0] i_addr;
 	wire [15:0] i_datain;
+	wire [15:0] d_datain;
 	wire [15:0] y;
 
 	// Instantiate the Unit Under Test (UUT)
@@ -57,16 +58,39 @@ module pcpu_tb;
 		.y(y),
 		.show_gr(show_gr)
 	);
-	
+
+`ifdef SYNTHESIZE
+	 i_mem i_mem0(
+      .clka(clock),
+      .addra(i_addr),
+      .douta(i_datain)
+    );
+
+	 d_mem d_mem0 (
+        .clka(clock),
+		  .wea(d_we),
+		  .addra(d_addr),
+		  .dina(d_dataout),
+		  .douta(d_datain)
+	 );
+`else
 	 imem imem0(
         .address(i_addr),
 	     .q(i_datain)
     );
+	 
+	 dmem dmem0(
+	     .clock(clock),
+	     .address(d_addr),
+		  .we(d_we),
+		  .data(d_dataout),
+		  .q(d_datain)
+    );
+`endif
 
 	initial begin
 		// Initialize Inputs
 		clock = 0;
-		d_datain = 0;
 		enable = 0;
 		reset = 0;
 		select_y = 0;
