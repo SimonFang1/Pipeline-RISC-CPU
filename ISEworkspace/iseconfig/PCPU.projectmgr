@@ -8,16 +8,29 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/top D:|ISEDesign|ESAD|week6|PCPU|top.v/pcpu - PCPU</ClosedNode>
-         <ClosedNode>/top D:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v</ClosedNode>
+         <ClosedNode>/top D:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dldm_id - DetectLoadDataMiss</ClosedNode>
+         <ClosedNode>/top D:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_ex_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top D:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_ex_2 - DetectWBData</ClosedNode>
+         <ClosedNode>/top D:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_mem_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top D:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_mem_2 - DetectWBData</ClosedNode>
+         <ClosedNode>/top D:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_wb_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top D:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_wb_2 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/dldm_id - DetectLoadDataMiss</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_ex_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_ex_2 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_mem_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_mem_2 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_wb_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_wb_2 - DetectWBData</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>top (D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/top.v)</SelectedItem>
+         <SelectedItem>alu - ALU (D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/ALU.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >14</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000c9000000020000000000000000000000000200000064ffffffff000000810000000300000002000000c90000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000175000000020000000000000000000000000200000064ffffffff000000810000000300000002000001750000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>top (D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/top.v)</CurrentItem>
+      <CurrentItem>alu - ALU (D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/ALU.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -25,13 +38,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -40,7 +53,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000027d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a00000000100000000000000240000000100000000000000780000000100000000000001410000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000028e000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a00000000100000000000000240000000100000000000000780000000100000000000001520000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>ALU.v</CurrentItem>
    </ItemView>
@@ -60,18 +73,20 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000000ee000000ba01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -79,15 +94,23 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/test D:|ISEDesign|ESAD|week6|PCPU|test.v</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/dldm_id - DetectLoadDataMiss</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dldm_id - DetectLoadDataMiss</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_ex_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_ex_2 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_mem_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_mem_2 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_wb_1 - DetectWBData</ClosedNode>
+         <ClosedNode>/top d:|Users|Simon|Documents|GitHub|Pipeline-RISC-CPU|ISEworkspace|top.v/pcpu - PCPU/pcpu_dwbd_wb_2 - DetectWBData</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>pcpu_tb (D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/pcpu_tb.v)</SelectedItem>
+         <SelectedItem>imem0 - imem (D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/pcpu_tb.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >21</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000135000000020000000000000000000000000200000064ffffffff000000810000000300000002000001350000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000175000000020000000000000000000000000200000064ffffffff000000810000000300000002000001750000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>pcpu_tb (D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/pcpu_tb.v)</CurrentItem>
+      <CurrentItem>imem0 - imem (D:/Users/Simon/Documents/GitHub/Pipeline-RISC-CPU/ISEworkspace/pcpu_tb.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -95,26 +118,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -146,13 +169,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View HDL Functional Model</SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View HDL Functional Model</CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
       <ClosedNodes>
@@ -163,7 +186,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000176000000010000000100000000000000000000000064ffffffff000000810000000000000001000001760000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>

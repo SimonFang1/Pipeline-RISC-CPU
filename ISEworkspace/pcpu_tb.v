@@ -58,18 +58,18 @@ module pcpu_tb;
 		.show_gr(show_gr)
 	);
 
-	 imem imem0(
-        .address(i_addr),
-	     .q(i_datain)
-    );
-	 
-	 dmem dmem0(
-	     .clock(clock),
-	     .address(d_addr),
-		  .we(d_we),
-		  .data(d_dataout),
-		  .q(d_datain)
-    );
+	imem imem0(
+		.address(i_addr),
+		.q(i_datain)
+	);
+
+	dmem dmem0(
+		.clock(clock),
+		.address(d_addr),
+		.we(d_we),
+		.data(d_dataout),
+		.q(d_datain)
+	);
 
 	initial begin
 		// Initialize Inputs
@@ -102,30 +102,30 @@ module pcpu_tb;
 endmodule
 
 module imem(
-    input [7:0] address,
-	 output [15:0] q
-    );
-	 reg [15:0] ram[0:255];
-	 assign q = ram[address];
-	 initial begin
-	     $readmemb("ipcore_dir/i_mem.mif", ram);
-	 end
+	input [7:0] address,
+	output [15:0] q
+);
+	reg [15:0] ram[0:255];
+	assign q = ram[address];
+	initial begin
+		$readmemb("ipcore_dir/i_mem.mif", ram);
+	end
 endmodule
 
 module dmem(
-	 input clock,
-	 input [7:0] address,
-	 input we,
-	 input [15:0] data,
-	 output [15:0] q
-    );
-    reg [15:0] ram[0:255];
-	 assign q = ram[address];
-    always @(posedge clock) begin
-        if (we)
-            ram[address] <= data;
-	 end
-	 initial begin
-	     $readmemb("ipcore_dir/d_mem.mif", ram);
-	 end
+	input clock,
+	input [7:0] address,
+	input we,
+	input [15:0] data,
+	output [15:0] q
+);
+	reg [15:0] ram[0:255];
+	assign q = ram[address];
+	always @(posedge clock) begin
+		if (we)
+			ram[address] <= data;
+	end
+	initial begin
+		$readmemb("ipcore_dir/d_mem.mif", ram);
+	end
 endmodule
