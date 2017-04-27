@@ -78,6 +78,25 @@ module PCPU(
 					next_state = `exec;
 		endcase
 	end
+	
+	//*********** General Register **********//
+	reg [15:0] gr[0:7];
+	//************* WB *************//
+	always @(posedge clock or posedge reset) begin
+		if (reset) begin
+			gr[0] <= 0; gr[1] <= 0; gr[2] <= 0; gr[3] <= 0;
+			gr[4] <= 0; gr[5] <= 0; gr[6] <= 0; gr[7] <= 0;
+		end else if (state ==`exec) begin
+			case(wb_ir[`I_OP])
+				`LOAD, `MOV,
+				`ADD, `ADDI, `ADDC,
+				`SUB, `SUBI, `SUBC, 
+				`NOT, `AND, `OR, `XOR,
+				`SL, `SRL, `SRA, `LDIH:
+					gr[wb_ir[`I_R1]] <= reg_C1;
+			endcase
+		end
+	end
 	 
 	//************* IF *************//
 	wire w_data_miss;
@@ -114,26 +133,6 @@ module PCPU(
 				if (wb_ir[`I_OP] != `HALT)
 					pc <= pc_jump ? reg_C[7:0] : (pc + 1'b1);
 			end
-		end
-	end
-
-	//*********** General Register **********//
-	reg [15:0] gr[0:7];
-	//************* WB *************//
-	always @(posedge clock or posedge reset) begin
-		if (reset) begin
-			gr[0] <= 0; gr[1] <= 0; gr[2] <= 0; gr[3] <= 0;
-			gr[4] <= 0; gr[5] <= 0; gr[6] <= 0; gr[7] <= 0;
-		end else if (state ==`exec) begin
-			case(wb_ir[`I_OP])
-				`LOAD, `MOV,
-				`ADD, `ADDI, `ADDC,
-				`SUB, `SUBI, `SUBC, 
-				`NOT, `AND, `OR, `XOR,
-				`SL, `SRL, `SRA, `LDIH:
-					if (!pc_jump)
-						gr[wb_ir[`I_R1]] <= reg_C1;
-			endcase
 		end
 	end
 
@@ -235,7 +234,7 @@ module PCPU(
 			ex_ir[`I_OP] == `BC || ex_ir[`I_OP] == `BNC))
 				flags <= w_flags;
 				smdr1 <= smdr;
-				if (ex_ir[`I_OP] == `STORE)
+				if (!pc_jump && ex_ir[`I_OP] == `STORE)
 					dw <= 1'b1;
 				else
 					dw <= 1'b0;
