@@ -63,6 +63,13 @@
 `define I_VAL3		3:0
 `define I_IMDT		7:0
 
+// parse
+`define P_NULL	 3'b000
+`define P_VAL2  3'b010
+`define P_VAL3  3'b001
+`define P_IMDT  3'b011
+`define P_HIMDT 3'b111
+
 //gr
 `define gr0 3'b000
 `define gr1 3'b001
@@ -72,6 +79,8 @@
 `define gr5 3'b101
 `define gr6 3'b110
 `define gr7 3'b111
+
+
 
 ////alias
 //`define CF			flags[0]

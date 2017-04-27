@@ -53,25 +53,6 @@ module PCPU(
     assign d_addr = reg_C[7:0];
     assign i_addr = pc;
 	 
-	 //*********** General Register **********//
-	 reg [15:0] gr[0:7];
-	 //************* WB *************//
-    always @(posedge clock or posedge reset) begin
-        if (reset) begin
-		      gr[0] <= 0; gr[1] <= 0; gr[2] <= 0; gr[3] <= 0;
-				gr[4] <= 0; gr[5] <= 0; gr[6] <= 0; gr[7] <= 0;
-		  end else if (state ==`exec) begin
-		      case(wb_ir[`I_OP])
-				    `LOAD, `MOV,
-					 `ADD, `ADDI, `ADDC,
-					 `SUB, `SUBI, `SUBC, 
-					 `NOT, `AND, `OR, `XOR,
-					 `SL, `SRL, `SRA,
-					 `LDIH: gr[wb_ir[`I_R1]] <= reg_C1;
-				endcase
-        end
-    end
-	 
 	 //************* CPU control *************//
 	 reg state, next_state;
     always @(posedge clock) begin
@@ -99,21 +80,46 @@ module PCPU(
     end
 	 
 	 //************* IF *************//
+//	wire w_data_miss;
+//	wire [3:0] w_miss_out;
+//	 
+//	assign w_data_miss =
+//		w_miss_out[0] | w_miss_out[1] |
+//		w_miss_out[2] | w_miss_out[3];
+//	 
+//	DetectLoadDataMiss dldm_id(
+//		.peek_ir(data_in),
+//		.previous_ir(id_ir),
+//		.miss(w_miss_out[0])
+//	);
+//	
+//	DetectLoadDataMiss dldm_ex(
+//		.peek_ir(data_in),
+//		.previous_ir(ex_ir),
+//		.miss(w_miss_out[1])
+//	);
+//	
+//	DetectLoadDataMiss dldm_mem(
+//		.peek_ir(data_in),
+//		.previous_ir(mem_ir),
+//		.miss(w_miss_out[2])
+//	);
+//	
+//	DetectLoadDataMiss dldm_wb(
+//		.peek_ir(data_in),
+//		.previous_ir(wb_ir),
+//		.miss(w_miss_out[3])
+//	);
+
+	wire w_data_miss;
+	 
+	DetectLoadDataMiss pcpu_dldm_id(
+		.peek_ir(i_datain),
+		.prev_ir(id_ir),
+		.miss(w_data_miss)
+	);
+	 
 	 reg pc_jump;
-    always @(posedge clock or posedge reset) begin
-        if (reset) begin
-            id_ir <= 16'b0000_0000_0000_0000;
-            pc <= 8'b0000_0000;
-        end else if (state ==`exec) begin
-            id_ir <= i_datain;
-				if (wb_ir[`I_OP] == `HALT)
-				    pc <= pc;
-				else if (pc_jump == 1'b1)
-				    pc <= reg_C[7:0];
-			   else
-				    pc <= pc + 1'b1;
-        end
-    end
 	 always @(*) begin
 	     case(mem_ir[`I_OP])
 		      `JUMP,
@@ -128,47 +134,158 @@ module PCPU(
 		  endcase
 	 end
 	 
+    always @(posedge clock or posedge reset) begin
+        if (reset) begin
+            id_ir <= 16'b0000_0000_0000_0000;
+            pc <= 8'b0000_0000;
+        end else if (state ==`exec) begin
+		      if (w_data_miss) begin
+				    id_ir <= {`NOP, 11'd0};
+				end else begin
+                id_ir <= pc_jump ? {`NOP, 11'd0} : i_datain;
+				    if (wb_ir[`I_OP] != `HALT)
+					     pc <= pc_jump ? reg_C[7:0] : (pc + 1'b1);
+				end
+        end
+    end
+	 
+	 //*********** General Register **********//
+	 reg [15:0] gr[0:7];
+	 //************* WB *************//
+    always @(posedge clock or posedge reset) begin
+        if (reset) begin
+		      gr[0] <= 0; gr[1] <= 0; gr[2] <= 0; gr[3] <= 0;
+				gr[4] <= 0; gr[5] <= 0; gr[6] <= 0; gr[7] <= 0;
+		  end else if (state ==`exec) begin
+		      case(wb_ir[`I_OP])
+				    `LOAD, `MOV,
+					 `ADD, `ADDI, `ADDC,
+					 `SUB, `SUBI, `SUBC, 
+					 `NOT, `AND, `OR, `XOR,
+					 `SL, `SRL, `SRA, `LDIH:
+					     if (!pc_jump)
+						      gr[wb_ir[`I_R1]] <= reg_C1;
+				endcase
+        end
+    end
+	 
 	 //************* ID *************//
+	wire [3:0] w_rgra1, w_rgra2;
+	wire [2:0] w_dirty1, w_dirty2;
+	ParseReadGR pcpu_parseRGR(
+		.ir(id_ir),
+		.gra1(w_rgra1),
+		.gra2(w_rgra2)
+	);
+	DetectWBData pcpu_dwbd_ex_1(
+		.gra(w_rgra1[2:0]),
+		.prev_ir(ex_ir),
+		.dirty(w_dirty1[0])
+	);
+	DetectWBData pcpu_dwbd_mem_1(
+		.gra(w_rgra1[2:0]),
+		.prev_ir(mem_ir),
+		.dirty(w_dirty1[1])
+	);
+	DetectWBData pcpu_dwbd_wb_1(
+		.gra(w_rgra1[2:0]),
+		.prev_ir(wb_ir),
+		.dirty(w_dirty1[2])
+	);
+	DetectWBData pcpu_dwbd_ex_2(
+		.gra(w_rgra2[2:0]),
+		.prev_ir(ex_ir),
+		.dirty(w_dirty2[0])
+	);
+	DetectWBData pcpu_dwbd_mem_2(
+		.gra(w_rgra2[2:0]),
+		.prev_ir(mem_ir),
+		.dirty(w_dirty2[1])
+	);
+	DetectWBData pcpu_dwbd_wb_2(
+		.gra(w_rgra2[2:0]),
+		.prev_ir(wb_ir),
+		.dirty(w_dirty2[2])
+	);
+	
      always @(posedge clock or posedge reset) begin
 	     if (reset) begin
 		      ex_ir <= 16'd0;
 		  end else if (state ==`exec) begin
-            ex_ir <= id_ir;
+            ex_ir <= pc_jump ? {`NOP, 11'd0} : id_ir;
 				smdr <= gr[id_ir[`I_R1]];
-				case(id_ir[`I_OP])
-				    `JUMP,
-					 `MOV: begin
-					      reg_A <= 16'd0;
-							reg_B <= id_ir[`I_IMDT];
-					 end
-					 `LDIH: begin
-					     reg_A <= gr[id_ir[`I_R1]];
-						  reg_B <= {id_ir[`I_IMDT], 8'd0};
-					 end
-					 `ADDI,
-				    `JMPR,
-				    `BZ,
-				    `BNZ,
-				    `BN,
-				    `BNN,
-				    `BC,
-				    `BNC: begin
-				        reg_A <= gr[id_ir[`I_R1]];
-						  reg_B <= id_ir[`I_IMDT];
-				    end
-					 `LOAD,
-					 `STORE,
-					 `SL,
-					 `SRL,
-					 `SRA: begin
-					     reg_A <= gr[id_ir[`I_R2]];
-					     reg_B <= id_ir[`I_VAL3];
-					 end
-				    default: begin
-					     reg_A <= gr[id_ir[`I_R2]];
-						  reg_B <= gr[id_ir[`I_R3]];
-					 end
-            endcase
+//				case(id_ir[`I_OP])
+//				    `JUMP,
+//					 `MOV: begin
+//					      reg_A <= 16'd0;
+//							reg_B <= id_ir[`I_IMDT];
+//					 end
+//					 `LDIH: begin
+//					     reg_A <= gr[id_ir[`I_R1]];
+//						  reg_B <= {id_ir[`I_IMDT], 8'd0};
+//					 end
+//					 `ADDI,
+//				    `JMPR,
+//				    `BZ,
+//				    `BNZ,
+//				    `BN,
+//				    `BNN,
+//				    `BC,
+//				    `BNC: begin
+//				        reg_A <= gr[id_ir[`I_R1]];
+//						  reg_B <= id_ir[`I_IMDT];
+//				    end
+//					 `LOAD,
+//					 `STORE,
+//					 `SL,
+//					 `SRL,
+//					 `SRA: begin
+//					     reg_A <= gr[id_ir[`I_R2]];
+//					     reg_B <= id_ir[`I_VAL3];
+//					 end
+//				    default: begin
+//					     reg_A <= gr[id_ir[`I_R2]];
+//						  reg_B <= gr[id_ir[`I_R3]];
+//					 end
+//            endcase
+              if (w_rgra1[3]) begin
+				      case(w_rgra1[2:0])
+						    `P_NULL: reg_A <= 7'd0;
+							 `P_VAL3: reg_A <= id_ir[`I_VAL3];
+							 `P_VAL2: reg_A <= id_ir[`I_VAL2];
+							 `P_IMDT: reg_A <= id_ir[`I_IMDT];
+							 `P_HIMDT: reg_A <= {id_ir[`I_IMDT], 8'd0};
+							 // no default is ok, because reg_A is flip-flop
+						endcase
+				  end else begin
+				      if (w_dirty1[0])
+						    reg_A <= w_flags;
+						else if (w_dirty1[1])
+						    reg_A <= reg_C;
+						else if (w_dirty1[2])
+						    reg_A <= reg_C1;
+						else
+						    reg_A <= gr[w_rgra1[2:0]];
+				  end
+				  if (w_rgra2[3]) begin
+				      case(w_rgra2[2:0])
+						    `P_NULL: reg_B <= 7'd0;
+							 `P_VAL3: reg_B <= id_ir[`I_VAL3];
+							 `P_VAL2: reg_B <= id_ir[`I_VAL2];
+							 `P_IMDT: reg_B <= id_ir[`I_IMDT];
+							 `P_HIMDT: reg_B <= {id_ir[`I_IMDT], 8'd0};
+							 // no default is ok, because reg_B is flip-flop
+						endcase
+				  end else begin
+				      if (w_dirty2[0])
+						    reg_B <= w_flags;
+						else if (w_dirty2[1])
+						    reg_B <= reg_C;
+						else if (w_dirty2[2])
+						    reg_B <= reg_C1;
+						else
+						    reg_B <= gr[w_rgra2[2:0]];
+				  end
         end
     end
 	 
@@ -177,7 +294,7 @@ module PCPU(
         if (reset) begin
 		      mem_ir <= 16'd0;
 		  end else if (state ==`exec) begin
-            mem_ir <= ex_ir;
+            mem_ir <= pc_jump ? {`NOP, 11'd0} : ex_ir;
             reg_C <= w_ALUo;
 				if (!(ex_ir[`I_OP] == `BN || ex_ir[`I_OP] == `BNN ||
 				      ex_ir[`I_OP] == `BZ || ex_ir[`I_OP] == `BNZ ||
@@ -197,7 +314,7 @@ module PCPU(
 		      wb_ir <= 16'd0;
 		  end else if (state ==`exec) begin
 		      if (wb_ir[`I_OP] != `HALT)
-                wb_ir <= mem_ir;
+                wb_ir <= pc_jump ? {`NOP, 11'd0} : mem_ir;
             if (mem_ir[`I_OP] == `LOAD)
                 reg_C1 <= d_datain;
             else
@@ -278,4 +395,82 @@ module PCPU(
 			  endcase
 		  end
 	 end
+endmodule
+
+module ParseReadGR(
+	input [15:0] ir,
+	output reg [3:0] gra1,
+	output reg [3:0] gra2
+);
+	// gra[3]  - read neg enable
+	// gra[2:0]- read address
+	always @(*) begin
+		case(ir[`I_OP])
+			`NOP,
+			`HALT: {gra1, gra2} = {1'b1, 3'd0, 1'b1, 3'd0};
+			`LDIH: {gra1, gra2} = {1'b0, ir[`I_R1], 1'b1, `P_HIMDT};
+			`JUMP,`MOV: {gra1, gra2} = {1'b1, `P_NULL, 1'b1, `P_IMDT};
+			`NOT: {gra1, gra2} = {1'b0, ir[`I_R2], 1'b1, `P_NULL};
+			`ADD,`ADDC,`SUB,`SUBC,`CMP,`AND,`OR,
+			`XOR: {gra1, gra2} = {1'b0, ir[`I_R2], 1'b0, ir[`I_R3]};
+			`ADDI,`SUBI,`JMPR,`BZ,`BNZ,`BN,`BNN,`BC,
+			`BNC: {gra1, gra2} = {1'b0, ir[`I_R1], 1'b1, `P_IMDT};
+			`SL,`SRL,`SRA,`LOAD,
+			`STORE: {gra1, gra2} = {1'b0, ir[`I_R2], 1'b1, `P_VAL3};
+			default: {gra1, gra2} = {1'b1, `P_NULL, 1'b1, `P_NULL};
+		endcase
+	end
+endmodule
+
+// The following modules will cause some warnings:
+// WARNING:Xst:647 - Input <xxx> is never used.
+// e.g. ir[15:0] is connected but ir[7:0] is useless.
+// Warinings can be eliminated by rewriting the modules
+// and the caller of the modules,
+// but it will make the code hard to read.
+// STUPID ISE!
+module ParseWriteGR(
+	input [15:0] ir,
+	output reg [3:0] gra
+);
+	always @(*) begin
+		case(ir[`I_OP])
+			`LOAD,`LDIH,`ADD,`ADDI,`ADDC,`SUB,`SUBI,`SUBC,
+			`AND,`XOR,`OR,`NOT,`SL,`SRL,`SRA:
+				gra = {1'b0, ir[`I_R1]};
+			default: gra = 4'b1000;
+		endcase
+	end
+endmodule
+
+module DetectLoadDataMiss(
+	input [15:0] peek_ir,
+	input [15:0] prev_ir,
+	output miss
+);
+	wire nre1, nre2;
+	wire [2:0] rgr1, rgr2;
+	ParseReadGR l_parseRGR(
+		.ir(peek_ir),
+		.gra1({nre1, rgr1}),
+		.gra2({nre2, rgr2})
+	);
+	assign miss = (prev_ir[`I_OP] == `LOAD &&
+						((!nre1 && prev_ir[`I_R1] == rgr1) ||
+						 (!nre2 && prev_ir[`I_R1] == rgr2))   ) ?
+						1'b1 : 1'b0;
+endmodule
+
+module DetectWBData(
+	input [2:0] gra,
+	input [15:0] prev_ir,
+	output dirty
+);
+	wire nwe;
+	wire [2:0] wgra;
+	assign dirty = !nwe && gra == wgra;
+	ParseWriteGR wb_parseWGR(
+		.ir(prev_ir),
+		.gra({nwe, wgra})
+	);
 endmodule
