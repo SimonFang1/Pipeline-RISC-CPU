@@ -71,6 +71,20 @@ module pcpu_tb;
 		.q(d_datain)
 	);
 
+	task dmem_dump;
+		integer x, fp;
+		begin
+			x = 0;
+			fp = $fopen("dmem.mem.master");
+			$fdisplay (fp,"");
+			repeat (256) begin
+				$fdisplay (fp,"Add:%x, Cell:%x", x, dmem0.ram[x]);
+				x=x+1;
+			end
+			$fclose(fp);
+		end
+	endtask
+
 	initial begin
 		// Initialize Inputs
 		clock = 0;
@@ -86,16 +100,23 @@ module pcpu_tb;
 		#100;
         
 		// Add stimulus here
-		$display("pc:     id_ir      :reg_A:reg_B:reg_C:da:dd  :w:reC1:gr1 :gr2 : gr3");
+		$display("%s%s%s%s%s",
+					"pc:     id_ir      :",
+					"reg_A:reg_B:reg_C:",
+					"da:dd  :w:reC1:",
+					"gr1 :gr2 :gr3 :gr4 :",
+					"gr5 :gr6 :gr7");
 		$monitor(
-				"%h:%b:%h :%h :%h :%h:%h:%b:%h:%h:%h:%h", 
+				"%h:%b:%h :%h :%h :%h:%h:%b:%h:%h:%h:%h:%h:%h:%h:%h", 
 				pcpu.pc, pcpu.id_ir, pcpu.reg_A, pcpu.reg_B, pcpu.reg_C,
-				d_addr, d_dataout, d_we, pcpu.reg_C1, pcpu.gr[1], pcpu.gr[2], pcpu.gr[3]
+				d_addr, d_dataout, d_we, pcpu.reg_C1,
+				pcpu.gr[1], pcpu.gr[2], pcpu.gr[3], pcpu.gr[4],
+				pcpu.gr[5], pcpu.gr[6], pcpu.gr[7]
 		);
 		start = 1;
 		enable = 1;
-		#10;
-	
+		#20000;
+		dmem_dump;
 	end
 	always #5 clock = ~clock;
       

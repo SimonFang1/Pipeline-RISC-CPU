@@ -25,10 +25,9 @@
 `define OR			5'b01110  // *
 `define XOR			5'b01111  // *
 `define NOT			5'b10011  // * bitwise inverse
-`define SL			5'b00100
-`define SLL			5'b00100  // pseudo-instruction
+`define SLL			5'b00100  
 `define SRL			5'b00101  // *
-`define SLA			5'b00100  // pseudo-instruction
+`define SLA			5'b00110  // *
 `define SRA			5'b00111  // *
 //Control
 `define JUMP		5'b11000
@@ -50,9 +49,10 @@
 `define A_ADDPLS	4'b0101
 `define A_SUB		4'b0110
 `define A_SUBMNS	4'b0111
-`define A_SL		4'b1000
+`define A_SLL		4'b1000
 `define A_SRL		4'b1001
-`define A_SRA		4'b1010
+`define A_SLA		4'b1010
+`define A_SRA		4'b1011
 
 //instruction segment
 `define I_OP		15:11

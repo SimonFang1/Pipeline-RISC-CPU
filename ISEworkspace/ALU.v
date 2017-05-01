@@ -39,9 +39,10 @@ module ALU(
 			`A_ADDPLS: {`CF, ALUo} = operandA + operandB + 1'b1;
 			`A_SUB: {`CF, ALUo} = operandA - operandB;
 			`A_SUBMNS: {`CF, ALUo} = operandA - operandB - 1'b1;
-			`A_SL: begin ALUo = operandA << operandB[3:0]; `CF = 0; end
-			`A_SRL: begin ALUo = operandA >> operandB[3:0]; `CF = 0; end
-			`A_SRA: begin ALUo = $signed(operandA) >>> operandB[3:0]; `CF = 0; end
+			`A_SLL: begin ALUo = operandA << operandB[4:0]; `CF = 0; end
+			`A_SLA: begin ALUo = {operandA[15], operandA[14:0] <<< operandB[3:0]}; `CF = 0; end
+			`A_SRL: begin ALUo = operandA >> operandB[4:0]; `CF = 0; end
+			`A_SRA: begin ALUo = $signed(operandA) >>> operandB[4:0]; `CF = 0; end
 			default: begin ALUo = operandA & operandB; `CF = 0; end
 		endcase
 	end
