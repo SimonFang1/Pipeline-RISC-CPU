@@ -22,7 +22,7 @@
 #define SL		"00100"
 #define SLL		"00100"
 #define SRL		"00101"
-#define SLA		"00100"
+#define SLA		"00110"
 #define SRA		"00111"
 
 #define JUMP	"11000"

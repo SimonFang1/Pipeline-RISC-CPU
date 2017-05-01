@@ -64,7 +64,7 @@ int main() {
 			machineCode = ADDC + getBin(r1, 3) + getBin(r2, 4) + getBin(r3, 4);
 		} else if (op == "sub") {
 			ss >> R1_R2_R3;
-			machineCode = ADD + getBin(r1, 3) + getBin(r2, 4) + getBin(r3, 4);
+			machineCode = SUB + getBin(r1, 3) + getBin(r2, 4) + getBin(r3, 4);
 		} else if (op == "subi") {
 			ss >> R1_IM;
 			machineCode = SUBI + getBin(r1, 3) + getBin(immediate, 8);
@@ -86,9 +86,12 @@ int main() {
 		} else if (op == "not") {
 			ss >> R1_R2;
 			machineCode = NOT + getBin(r1, 3) + getBin(r2, 4) + getBin(0, 4);
-		} else if (op == "sl" || op == "sll" || op == "sla") {
+		} else if (op == "sll") {
 			ss >> R1_R2_V3;
-			machineCode = SL + getBin(r1, 3) + getBin(r2, 4) + getBin(val3, 4);
+			machineCode = SLL + getBin(r1, 3) + getBin(r2, 4) + getBin(val3, 4);
+		} else if (op == "sla") {
+			ss >> R1_R2_V3;
+			machineCode = SLA + getBin(r1, 3) + getBin(r2, 4) + getBin(val3, 4);
 		} else if (op == "srl") {
 			ss >> R1_R2_V3;
 			machineCode = SRL + getBin(r1, 3) + getBin(r2, 4) + getBin(val3, 4);
@@ -105,9 +108,6 @@ int main() {
 			ss >> R1_IM;
 			machineCode = BZ + getBin(r1, 3) + getBin(immediate, 8);
 		} else if (op == "bnz") {
-			ss >> R1_IM;
-			machineCode = BZ + getBin(r1, 3) + getBin(immediate, 8);
-		} else if (op == "bz") {
 			ss >> R1_IM;
 			machineCode = BNZ + getBin(r1, 3) + getBin(immediate, 8);
 		} else if (op == "bn") {

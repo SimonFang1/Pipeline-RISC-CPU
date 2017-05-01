@@ -1,10 +1,11 @@
 #include <iostream>
+#include <cstring>
 #include <string>
 using namespace std;
 
 #define TOTAL_MEM 256
 
-int mem[TOTAL_MEM]; // global data will be set to zero
+int mem[TOTAL_MEM];
 
 string getBin(int n, int bits) {
 	string bin;
@@ -16,6 +17,7 @@ string getBin(int n, int bits) {
 
 int main() {
 	int addr, data;
+	memset(mem, 0xdd, sizeof(mem));
 	while (cin >> hex >> addr >> data) {
 		mem[addr] = data;
 	}
