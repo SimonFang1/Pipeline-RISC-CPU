@@ -1,0 +1,8 @@
+00 fffe
+01 fffe
+02 fffe
+03 0000
+04 ffff
+05 ffff
+06 ffff
+07 0000
