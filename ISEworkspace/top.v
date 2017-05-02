@@ -52,7 +52,7 @@ module top(
 	 clock_div clk_div_cpu(
         .clock(clock),
 	     .reset(reset),
-	     .div_ratio(32'd50_000_000), // 1s
+	     .div_ratio(32'd5_000_000), // 0.1s
 	     .clk_div(cpu_clk_auto)
     );
 	 clock_div clk_div_display(
