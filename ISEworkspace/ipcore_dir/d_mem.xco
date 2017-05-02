@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Sat Apr 15 16:44:43 2017
+# Date: Tue May 02 09:04:05 2017
 #
 ##############################################################
 #
@@ -46,7 +46,7 @@ CSET axi_id_width=4
 CSET axi_slave_type=Memory_Slave
 CSET axi_type=AXI4_Full
 CSET byte_size=9
-CSET coe_file=D:\ISEDesign\ESAD\week6\PCPU\d_mem.coe
+CSET coe_file=D:\Users\Simon\Documents\GitHub\Pipeline-RISC-CPU\ISEworkspace\d_mem.coe
 CSET collision_warnings=ALL
 CSET component_name=d_mem
 CSET disable_collision_warnings=false
@@ -105,4 +105,4 @@ CSET write_width_b=16
 MISC pkg_timestamp=2012-11-19T16:22:25Z
 # END Extra information
 GENERATE
-# CRC: cf06e818
+# CRC: 792d3a00
