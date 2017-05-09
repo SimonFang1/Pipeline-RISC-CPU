@@ -251,11 +251,10 @@ module PCPU(
 		end else if (state ==`exec) begin
 			mem_ir <= pc_jump ? {`NOP, 11'd0} : ex_ir;
 			reg_C <= w_ALUo;
-			if (updateZFNF) begin
+			if (updateZFNF)
 				flags[2:1] <= w_flags[2:1];
-				if (updateCF)
-					flags[0] <= w_flags[0];
-			end
+			if (updateCF)
+				flags[0] <= w_flags[0];
 			smdr1 <= strAfterLd ? d_datain : smdr;
 			if (dwCondition)
 				dw <= 1'b1;
@@ -371,7 +370,8 @@ endmodule
 // WARNING:Xst:647 - Input <xxx> is never used.
 // e.g. ir[15:0] is connected but ir[7:0] is useless.
 // Warinings can be eliminated by rewriting the modules
-// and the caller of the modules, but it will make the code hard to read. STUPID ISE!
+// and the caller of the modules, but it will make the code hard to read.
+// STUPID ISE!
 module ParseWriteGR(
 	input [15:0] ir,
 	output reg [3:0] gra
@@ -396,7 +396,7 @@ module DetectLoadDataMiss(
 	// prev_ir[`I_R1] == peek_ir[`I_R1]
 	// is ignored, since data can be forwarded
 	// from d_datain, nop needn't be inserted.
-	// See the code in EX part where smdr1 get the right data.
+	// See the code in EX part how smdr1 get the right data.
 	wire nre1, nre2;
 	wire [2:0] rgr1, rgr2;
 	ParseReadGR l_parseRGR(
